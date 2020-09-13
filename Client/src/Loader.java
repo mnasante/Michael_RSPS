@@ -5,8 +5,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+
 
 
 public class Loader extends Applet {
@@ -132,6 +135,9 @@ public class Loader extends Applet {
 		} catch (Exception exception) {
 			exception.printStackTrace();
 		}
+
+
+
 	}
 
 	public String getParameter(String string) {
