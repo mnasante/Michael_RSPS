@@ -259,6 +259,8 @@ public final class MusicsManager implements Serializable {
 		if (!player.hasStarted())
 			return;
 		playingMusicDelay = Utils.currentTimeMillis();
+
+
 		if (musicId == -2) {
 			playingMusic = musicId;
 			player.getPackets().sendMusic(-1);
