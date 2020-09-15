@@ -1,0 +1,8 @@
+Sprites to edit for login screen:
+2498: The main Matrix logo in login screen, currently says "RuneScape"
+3779-3882: First background for loading screen
+3783-3786: Second background for loading screen
+8490-8493: Third background loading screen
+8494-8497: Fourth background loading screen
+8498-8501: Fifth background loading screen
+4139-4146: Main login screen
