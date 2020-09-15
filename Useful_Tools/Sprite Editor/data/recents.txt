@@ -24,3 +24,4 @@ C:\Users\Michael\OneDrive\RSPS Stuff\EnoxScape830\data\cache
 C:\Users\Michael\OneDrive\RSPS Stuff\EnoxScape830\tools\RuneScape Background Utility\out
 C:\Users\Michael\Michael_RSPS\Source\data\cache
 C:\Users\Michael\MichaelRSPS2\Base Matrix 718\Matrix Server\data\cache
+C:\Users\Michael\Michael_RSPS\Server\data\cache
