@@ -1,3 +1,6 @@
+import com.rs.game.World;
+import com.rs.game.player.Player;
+
 import java.applet.Applet;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -6,6 +9,8 @@ import java.net.URL;
 import java.util.Properties;
 
 
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -36,7 +41,7 @@ public class Loader extends Applet {
 	public static int[] outSizes = new int[256];
 	public static boolean localHost;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 		if (args.length > 0) {
 			if(Boolean.parseBoolean(args[0])) 
 				LOBBY_IP = IP = "127.0.0.1";
@@ -45,6 +50,7 @@ public class Loader extends Applet {
 		}
 		Loader loader = instance = new Loader();
 		loader.doFrame();
+		//loader.startMusic();
 	}
 	
 	public void init() {
@@ -55,6 +61,7 @@ public class Loader extends Applet {
 	void doApplet() {
 		setParams();
 		startClient();
+
 	}
 
 	public void doFrame() {
@@ -137,6 +144,24 @@ public class Loader extends Applet {
 		}
 
 
+
+	}
+
+	public void startMusic() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+		try {
+		MusicPlayer music = new MusicPlayer();
+		//music.play();
+
+
+
+	}
+
+		catch (Exception ex)
+		{
+			System.out.println("Error with playing sound.");
+			ex.printStackTrace();
+
+		}
 
 	}
 

@@ -1,6 +1,9 @@
 // Java program to play an Audio
 // file using Clip Object
 
+import com.rs.game.World;
+import com.rs.game.player.Player;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -14,6 +17,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class MusicPlayer
 {
 
+    private transient Player player;
     // to store current position
     Long currentFrame;
     Clip clip;
@@ -22,13 +26,15 @@ public class MusicPlayer
     String status;
 
     AudioInputStream audioInputStream;
-    static String filePath;
+    public static String filePath;
 
     // constructor to initialize streams and clip
     public MusicPlayer()
             throws UnsupportedAudioFileException,
             IOException, LineUnavailableException
     {
+
+        filePath = "C:/Users/Michael/OneDrive/RSPS_Stuff/RSPS_Tools/Heroes_Return.wav";
         // create AudioInputStream object
         audioInputStream =
                 AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
@@ -40,8 +46,9 @@ public class MusicPlayer
         clip.open(audioInputStream);
 
         clip.loop(Clip.LOOP_CONTINUOUSLY);
-    }
 
+    }
+/*
     public static void main(String[] args)
     {
         try
@@ -75,7 +82,7 @@ public class MusicPlayer
 
         }
     }
-
+*/
     // Work as the user enters his choice
 
     private void gotoChoice(int c)
@@ -114,6 +121,9 @@ public class MusicPlayer
         clip.start();
 
         status = "play";
+
+
+
     }
 
     // Method to pause the audio
@@ -192,7 +202,19 @@ public class MusicPlayer
         clip.loop(Clip.LOOP_CONTINUOUSLY);
     }
 
+    public void setPlayer(Player player) {
+        this.player = player;
+        //playingMusic = World.getRegion(player.getRegionId()).getMusicId();
 
+    }
 
+    public void setFilePath(String filePath) {
+        MusicPlayer.filePath = filePath;
+    }
+
+    public String getFilePath() {
+        return this.filePath;
+    }
 }
+
 
