@@ -1,0 +1,30 @@
+TODO for Server:
+
+*Important Tasks*
+1. Make myself (Michael) Owner
+    -Create Admin Class to handle owner/admin/mod stuff
+    -Possibly change everywhere that says setrights(x) to isOwner/Admin/Mod
+2. Find new home
+    -Possible ideas:
+        Edgeville
+        Grand Exchange
+3. Add new Gamemodes
+    -Normal Player
+    -Legend
+    -Extreme
+    -Ironman
+    -Add this into the tutorial
+4. Change backgrounds of loading screens, design new login screen
+
+5. Add Shops/NPCs
+    -Don't do this until home is officially declared
+
+6. FIX Moneypouch
+
+7. Set starting items
+
+*Not so important but probably need for the future*
+
+1. Find what weapons should be good.
+    - Add bonuses to these weapons
+
