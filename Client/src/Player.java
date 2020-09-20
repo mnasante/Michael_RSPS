@@ -281,7 +281,7 @@ public class Player extends Entity {
 					Class438 class438_29_ = ((aClass438_10077
 							.method5819((byte) -61) && (!aBoolean10094 || class438 == null)) ? aClass438_10077
 							: null);
-					Class387 class387 = (Class283
+					DrawableModel drawableModel = (Class283
 							.method2678(
 									class_ra,
 									i_27_,
@@ -291,21 +291,21 @@ public class Player extends Entity {
 											* (((Player) this).anInt10073),
 									-104151209
 											* (((Player) this).anInt10074),
-									1, aClass387Array10082[0], 0, 0, 160, 240,
+									1, aDrawableModelArray10082[0], 0, 0, 160, 240,
 									class438_29_ != null ? class438_29_
 											: class438, 1812843484));
-					if (null != class387) {
+					if (null != drawableModel) {
 						if (null == aClass302_Sub1Array7726
-								|| (aClass302_Sub1Array7726.length < 1 + aClass387Array10082.length))
-							method4362(aClass387Array10082.length + 1,
+								|| (aClass302_Sub1Array7726.length < 1 + aDrawableModelArray10082.length))
+							method4362(aDrawableModelArray10082.length + 1,
 									-1332935516);
 						class335 = Class73.method818(true, 1694437358);
 						((Player) this).aBoolean10129 = true;
 						class_ra.RA(false);
-						class387
+						drawableModel
 								.method4739(
 										class222,
-										(aClass302_Sub1Array7726[aClass387Array10082.length]),
+										(aClass302_Sub1Array7726[aDrawableModelArray10082.length]),
 										0);
 						class_ra.RA(true);
 					}
@@ -329,7 +329,7 @@ public class Player extends Entity {
 								int i_31_ = (int) class217.aFloat2451;
 								int i_32_ = (int) class217.aFloat2454;
 								method4468(class_ra, class222,
-										aClass387Array10082[0], (long) i_31_,
+										aDrawableModelArray10082[0], (long) i_31_,
 										(long) i_32_,
 										class19.anInt263 * 408071539, 92160000L);
 							}
@@ -342,7 +342,7 @@ public class Player extends Entity {
 							long l_34_ = (long) (2140036693 * class19.anInt257 << 9);
 							l_34_ *= l_34_;
 							method4468(class_ra, class222,
-									aClass387Array10082[0], l, l_33_,
+									aDrawableModelArray10082[0], l, l_33_,
 									408071539 * class19.anInt263, l_34_);
 						}
 						if (10 == class19.anInt266 * 958933333
@@ -360,7 +360,7 @@ public class Player extends Entity {
 								int i_36_ = (int) class217.aFloat2451;
 								int i_37_ = (int) class217.aFloat2454;
 								method4468(class_ra, class222,
-										aClass387Array10082[0], (long) i_36_,
+										aDrawableModelArray10082[0], (long) i_36_,
 										(long) i_37_,
 										408071539 * class19.anInt263, 92160000L);
 							}
@@ -375,15 +375,15 @@ public class Player extends Entity {
 							(float) (-5 - (-661498661 * ((Player) this).anInt10122)),
 							0.0F);
 			if (null == aClass302_Sub1Array7726
-					|| aClass302_Sub1Array7726.length < aClass387Array10082.length)
-				method4362(aClass387Array10082.length, 1335663590);
+					|| aClass302_Sub1Array7726.length < aDrawableModelArray10082.length)
+				method4362(aDrawableModelArray10082.length, 1335663590);
 			if (class335 == null)
 				class335 = Class73.method818(true, 1293324019);
-			method4445(class_ra, aClass387Array10082, class222, false,
+			method4445(class_ra, aDrawableModelArray10082, class222, false,
 					482140235);
-			for (int i_38_ = 0; i_38_ < aClass387Array10082.length; i_38_++) {
-				if (aClass387Array10082[i_38_] != null)
-					aClass387Array10082[i_38_]
+			for (int i_38_ = 0; i_38_ < aDrawableModelArray10082.length; i_38_++) {
+				if (aDrawableModelArray10082[i_38_] != null)
+					aDrawableModelArray10082[i_38_]
 							.method4739(
 									class222,
 									aClass302_Sub1Array7726[i_38_],
@@ -395,11 +395,11 @@ public class Player extends Entity {
 						.method4229();
 				class_ra.method5042(class69);
 			}
-			for (int i_39_ = 0; i_39_ < aClass387Array10082.length; i_39_++) {
-				if (null != aClass387Array10082[i_39_])
-					((Player) this).aBoolean10129 |= aClass387Array10082[i_39_]
+			for (int i_39_ = 0; i_39_ < aDrawableModelArray10082.length; i_39_++) {
+				if (null != aDrawableModelArray10082[i_39_])
+					((Player) this).aBoolean10129 |= aDrawableModelArray10082[i_39_]
 							.i();
-				aClass387Array10082[i_39_] = null;
+				aDrawableModelArray10082[i_39_] = null;
 			}
 			anInt10066 = client.anInt8777 * -815465993;
 			return class335;
@@ -413,14 +413,14 @@ public class Player extends Entity {
 		return ((Player) this).anInt10216 * 613696379;
 	}
 
-	void method4468(GraphicsToolkit class_ra, Class222 class222, Class387 class387,
+	void method4468(GraphicsToolkit class_ra, Class222 class222, DrawableModel drawableModel,
 			long l, long l_40_, int i, long l_41_) {
 		try {
 			long l_42_ = l * l + l_40_ * l_40_;
 			if (l_42_ >= 262144L && l_42_ <= l_41_) {
 				int i_43_ = ((int) ((Math.atan2((double) l, (double) l_40_) * 2607.5945876176133) - (double) aClass386_10084
 						.method4719((byte) 0)) & 0x3fff);
-				Class387 class387_44_ = (Class219
+				DrawableModel drawableModel_44_ = (Class219
 						.method2044(
 								class_ra,
 								i_43_,
@@ -428,9 +428,9 @@ public class Player extends Entity {
 								(-197572281 * ((Player) this).anInt10073),
 								(((Player) this).anInt10074 * -104151209),
 								i, -2134746538));
-				if (class387_44_ != null) {
+				if (drawableModel_44_ != null) {
 					class_ra.RA(false);
-					class387_44_.method4739(class222, null, 0);
+					drawableModel_44_.method4739(class222, null, 0);
 					class_ra.RA(true);
 				}
 			}
@@ -460,7 +460,7 @@ public class Player extends Entity {
 					&& 443738891 * client.anInt8884 >= anInt10105 * 1920148979 && 443738891 * client.anInt8884 < 1953154657 * anInt10106);
 			if (bool)
 				i |= 0x80000;
-			Class387 class387 = (aClass387Array10082[0] = (aClass366_10209
+			DrawableModel drawableModel = (aDrawableModelArray10082[0] = (aClass366_10209
 					.method4545(class_ra, i, Class94.aClass349_913,
 							Class212.aClass144_2433, Class15.aClass507_224,
 							Class298_Sub32_Sub14.aClass477_9400,
@@ -485,32 +485,32 @@ public class Player extends Entity {
 				Class98.aByteArrayArray949 = new byte[50][];
 				client.anInt8677 = 0;
 			}
-			if (class387 == null)
+			if (drawableModel == null)
 				return false;
-			((Player) this).anInt10089 = class387.YA()
+			((Player) this).anInt10089 = drawableModel.YA()
 					* -49760597;
-			class387.n();
-			method4423(class387, 839093609);
+			drawableModel.n();
+			method4423(drawableModel, 839093609);
 			if (i_48_ != 0 || 0 != i_49_) {
 				method4425(i_50_, i_48_, i_49_,
 						class350.anInt3734 * -947990311,
 						1869548445 * class350.anInt3740, 1427427127);
 				if ((((Player) this).anInt10097 * -155466425) != 0)
-					class387.t(-155466425
+					drawableModel.t(-155466425
 							* ((Player) this).anInt10097);
 				if ((((Player) this).anInt10073 * -197572281) != 0)
-					class387
+					drawableModel
 							.EA((((Player) this).anInt10073)
 									* -197572281);
 				if (0 != (-104151209 * ((Player) this).anInt10074))
-					class387.ia(0, -104151209
+					drawableModel.ia(0, -104151209
 							* ((Player) this).anInt10074,
 							0);
 			} else
 				method4425(i_50_, getSize() << 9,
 						getSize() << 9, 0, 0, 1352604124);
 			if (bool)
-				class387.PA(aByte10117, aByte10108, aByte10109,
+				drawableModel.PA(aByte10117, aByte10108, aByte10109,
 						aByte10130 & 0xff);
 			if (!aBoolean10207)
 				method4424(class_ra, class350, i_46_, i_48_, i_49_, i_50_,
@@ -738,16 +738,16 @@ public class Player extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_72_ = 0; i_72_ < aClass387Array10082.length; i_72_++) {
-			if (aClass387Array10082[i_72_] != null
-					&& aClass387Array10082[i_72_].method4787(i, i_71_,
+		for (int i_72_ = 0; i_72_ < aDrawableModelArray10082.length; i_72_++) {
+			if (aDrawableModelArray10082[i_72_] != null
+					&& aDrawableModelArray10082[i_72_].method4787(i, i_71_,
 							class222, true, 0)) {
 				bool = true;
 				break;
 			}
 		}
-		for (int i_73_ = 0; i_73_ < aClass387Array10082.length; i_73_++)
-			aClass387Array10082[i_73_] = null;
+		for (int i_73_ = 0; i_73_ < aDrawableModelArray10082.length; i_73_++)
+			aDrawableModelArray10082[i_73_] = null;
 		return bool;
 	}
 
@@ -788,27 +788,27 @@ public class Player extends Entity {
 				Class438 class438_76_ = ((aClass438_10077
 						.method5819((byte) -39) && (!aBoolean10094 || class438 == null)) ? aClass438_10077
 						: null);
-				Class387 class387 = (Class283
+				DrawableModel drawableModel = (Class283
 						.method2678(
 								class_ra,
 								i,
 								(-155466425 * ((Player) this).anInt10097),
 								(-197572281 * ((Player) this).anInt10073),
 								(-104151209 * ((Player) this).anInt10074),
-								1, aClass387Array10082[0], 0, 0, 160, 240,
+								1, aDrawableModelArray10082[0], 0, 0, 160, 240,
 								class438_76_ != null ? class438_76_ : class438,
 								1812843484));
-				if (null != class387) {
+				if (null != drawableModel) {
 					if (null == aClass302_Sub1Array7726
-							|| (aClass302_Sub1Array7726.length < 1 + aClass387Array10082.length))
-						method4362(aClass387Array10082.length + 1, -1158693755);
+							|| (aClass302_Sub1Array7726.length < 1 + aDrawableModelArray10082.length))
+						method4362(aDrawableModelArray10082.length + 1, -1158693755);
 					class335 = Class73.method818(true, 1781263344);
 					((Player) this).aBoolean10129 = true;
 					class_ra.RA(false);
-					class387
+					drawableModel
 							.method4739(
 									class222,
-									(aClass302_Sub1Array7726[aClass387Array10082.length]),
+									(aClass302_Sub1Array7726[aDrawableModelArray10082.length]),
 									0);
 					class_ra.RA(true);
 				}
@@ -832,7 +832,7 @@ public class Player extends Entity {
 							int i_78_ = (int) class217.aFloat2451;
 							int i_79_ = (int) class217.aFloat2454;
 							method4468(class_ra, class222,
-									aClass387Array10082[0], (long) i_78_,
+									aDrawableModelArray10082[0], (long) i_78_,
 									(long) i_79_, class19.anInt263 * 408071539,
 									92160000L);
 						}
@@ -844,7 +844,7 @@ public class Player extends Entity {
 						long l_80_ = (long) (class19.anInt261 * 1018128075 - (int) class217.aFloat2454);
 						long l_81_ = (long) (2140036693 * class19.anInt257 << 9);
 						l_81_ *= l_81_;
-						method4468(class_ra, class222, aClass387Array10082[0],
+						method4468(class_ra, class222, aDrawableModelArray10082[0],
 								l, l_80_, 408071539 * class19.anInt263, l_81_);
 					}
 					if (10 == class19.anInt266 * 958933333
@@ -861,7 +861,7 @@ public class Player extends Entity {
 							int i_83_ = (int) class217.aFloat2451;
 							int i_84_ = (int) class217.aFloat2454;
 							method4468(class_ra, class222,
-									aClass387Array10082[0], (long) i_83_,
+									aDrawableModelArray10082[0], (long) i_83_,
 									(long) i_84_, 408071539 * class19.anInt263,
 									92160000L);
 						}
@@ -876,14 +876,14 @@ public class Player extends Entity {
 						(float) (-5 - (-661498661 * ((Player) this).anInt10122)),
 						0.0F);
 		if (null == aClass302_Sub1Array7726
-				|| aClass302_Sub1Array7726.length < aClass387Array10082.length)
-			method4362(aClass387Array10082.length, 984553269);
+				|| aClass302_Sub1Array7726.length < aDrawableModelArray10082.length)
+			method4362(aDrawableModelArray10082.length, 984553269);
 		if (class335 == null)
 			class335 = Class73.method818(true, 1891741263);
-		method4445(class_ra, aClass387Array10082, class222, false, -135783625);
-		for (int i_85_ = 0; i_85_ < aClass387Array10082.length; i_85_++) {
-			if (aClass387Array10082[i_85_] != null)
-				aClass387Array10082[i_85_]
+		method4445(class_ra, aDrawableModelArray10082, class222, false, -135783625);
+		for (int i_85_ = 0; i_85_ < aDrawableModelArray10082.length; i_85_++) {
+			if (aDrawableModelArray10082[i_85_] != null)
+				aDrawableModelArray10082[i_85_]
 						.method4739(
 								class222,
 								aClass302_Sub1Array7726[i_85_],
@@ -895,11 +895,11 @@ public class Player extends Entity {
 					.method4229();
 			class_ra.method5042(class69);
 		}
-		for (int i_86_ = 0; i_86_ < aClass387Array10082.length; i_86_++) {
-			if (null != aClass387Array10082[i_86_])
-				((Player) this).aBoolean10129 |= aClass387Array10082[i_86_]
+		for (int i_86_ = 0; i_86_ < aDrawableModelArray10082.length; i_86_++) {
+			if (null != aDrawableModelArray10082[i_86_])
+				((Player) this).aBoolean10129 |= aDrawableModelArray10082[i_86_]
 						.i();
-			aClass387Array10082[i_86_] = null;
+			aDrawableModelArray10082[i_86_] = null;
 		}
 		anInt10066 = client.anInt8777 * -815465993;
 		return class335;
@@ -912,11 +912,11 @@ public class Player extends Entity {
 			Class222 class222 = class_ra.method5178();
 			class222.method2054(method4337());
 			class222.method2064(0.0F, -5.0F, 0.0F);
-			method4445(class_ra, aClass387Array10082, class222,
+			method4445(class_ra, aDrawableModelArray10082, class222,
 					((Player) this).aBoolean10128,
 					-639077471);
-			for (int i = 0; i < aClass387Array10082.length; i++)
-				aClass387Array10082[i] = null;
+			for (int i = 0; i < aDrawableModelArray10082.length; i++)
+				aDrawableModelArray10082[i] = null;
 		}
 	}
 
@@ -969,16 +969,16 @@ public class Player extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_88_ = 0; i_88_ < aClass387Array10082.length; i_88_++) {
-			if (aClass387Array10082[i_88_] != null
-					&& aClass387Array10082[i_88_].method4787(i, i_87_,
+		for (int i_88_ = 0; i_88_ < aDrawableModelArray10082.length; i_88_++) {
+			if (aDrawableModelArray10082[i_88_] != null
+					&& aDrawableModelArray10082[i_88_].method4787(i, i_87_,
 							class222, true, 0)) {
 				bool = true;
 				break;
 			}
 		}
-		for (int i_89_ = 0; i_89_ < aClass387Array10082.length; i_89_++)
-			aClass387Array10082[i_89_] = null;
+		for (int i_89_ = 0; i_89_ < aDrawableModelArray10082.length; i_89_++)
+			aDrawableModelArray10082[i_89_] = null;
 		return bool;
 	}
 
@@ -1010,16 +1010,16 @@ public class Player extends Entity {
 				return false;
 			Class222 class222 = method4347();
 			boolean bool = false;
-			for (int i_94_ = 0; i_94_ < aClass387Array10082.length; i_94_++) {
-				if (aClass387Array10082[i_94_] != null
-						&& aClass387Array10082[i_94_].method4787(i, i_92_,
+			for (int i_94_ = 0; i_94_ < aDrawableModelArray10082.length; i_94_++) {
+				if (aDrawableModelArray10082[i_94_] != null
+						&& aDrawableModelArray10082[i_94_].method4787(i, i_92_,
 								class222, true, 0)) {
 					bool = true;
 					break;
 				}
 			}
-			for (int i_95_ = 0; i_95_ < aClass387Array10082.length; i_95_++)
-				aClass387Array10082[i_95_] = null;
+			for (int i_95_ = 0; i_95_ < aDrawableModelArray10082.length; i_95_++)
+				aDrawableModelArray10082[i_95_] = null;
 			return bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -1073,11 +1073,11 @@ public class Player extends Entity {
 			Class222 class222 = class_ra.method5178();
 			class222.method2054(method4337());
 			class222.method2064(0.0F, -5.0F, 0.0F);
-			method4445(class_ra, aClass387Array10082, class222,
+			method4445(class_ra, aDrawableModelArray10082, class222,
 					((Player) this).aBoolean10128,
 					-758371208);
-			for (int i = 0; i < aClass387Array10082.length; i++)
-				aClass387Array10082[i] = null;
+			for (int i = 0; i < aDrawableModelArray10082.length; i++)
+				aDrawableModelArray10082[i] = null;
 		}
 	}
 
@@ -1089,11 +1089,11 @@ public class Player extends Entity {
 				Class222 class222 = class_ra.method5178();
 				class222.method2054(method4337());
 				class222.method2064(0.0F, -5.0F, 0.0F);
-				method4445(class_ra, aClass387Array10082, class222,
+				method4445(class_ra, aDrawableModelArray10082, class222,
 						((Player) this).aBoolean10128,
 						1138059762);
-				for (int i_96_ = 0; i_96_ < aClass387Array10082.length; i_96_++)
-					aClass387Array10082[i_96_] = null;
+				for (int i_96_ = 0; i_96_ < aDrawableModelArray10082.length; i_96_++)
+					aDrawableModelArray10082[i_96_] = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -1145,16 +1145,16 @@ public class Player extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_98_ = 0; i_98_ < aClass387Array10082.length; i_98_++) {
-			if (aClass387Array10082[i_98_] != null
-					&& aClass387Array10082[i_98_].method4787(i, i_97_,
+		for (int i_98_ = 0; i_98_ < aDrawableModelArray10082.length; i_98_++) {
+			if (aDrawableModelArray10082[i_98_] != null
+					&& aDrawableModelArray10082[i_98_].method4787(i, i_97_,
 							class222, true, 0)) {
 				bool = true;
 				break;
 			}
 		}
-		for (int i_99_ = 0; i_99_ < aClass387Array10082.length; i_99_++)
-			aClass387Array10082[i_99_] = null;
+		for (int i_99_ = 0; i_99_ < aDrawableModelArray10082.length; i_99_++)
+			aDrawableModelArray10082[i_99_] = null;
 		return bool;
 	}
 }

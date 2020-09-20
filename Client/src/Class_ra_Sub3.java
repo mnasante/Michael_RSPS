@@ -80,7 +80,7 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 	protected boolean aBoolean8264;
 	protected int anInt8265;
 	Class161_Sub1_Sub1 aClass161_Sub1_Sub1_8266;
-	Class387_Sub3[] aClass387_Sub3Array8267;
+	DrawableModel_Sub3[] aClass387_Sub3Array8267;
 	protected Class174 aClass174_8268;
 	int anInt8269;
 	int anInt8270;
@@ -101,7 +101,7 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 	float[] aFloatArray8285;
 	protected Class298_Sub10[] aClass298_Sub10Array8286;
 	int anInt8287;
-	Class387_Sub3[] aClass387_Sub3Array8288;
+	DrawableModel_Sub3[] aClass387_Sub3Array8288;
 	public float aFloat8289;
 	public float aFloat8290;
 	protected float aFloat8291;
@@ -264,9 +264,9 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 				new Class181(Class155.aClass155_1597),
 				new Class181(Class155.aClass155_1599) });
 		for (int i = 0; i < 7; i++) {
-			((Class_ra_Sub3) this).aClass387_Sub3Array8288[i] = new Class387_Sub3(
+			((Class_ra_Sub3) this).aClass387_Sub3Array8288[i] = new DrawableModel_Sub3(
 					this, 0, 0, false, false);
-			((Class_ra_Sub3) this).aClass387_Sub3Array8267[i] = new Class387_Sub3(
+			((Class_ra_Sub3) this).aClass387_Sub3Array8267[i] = new DrawableModel_Sub3(
 					this, 0, 0, true, true);
 		}
 		method5402();
@@ -776,9 +776,9 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		return aClass233_8251;
 	}
 
-	public final Class387 method5116(Class64 class64, int i, int i_73_,
-			int i_74_, int i_75_) {
-		return new Class387_Sub3(this, class64, i, i_74_, i_75_, i_73_);
+	public final DrawableModel method5116(Class64 class64, int i, int i_73_,
+                                          int i_74_, int i_75_) {
+		return new DrawableModel_Sub3(this, class64, i, i_74_, i_75_, i_73_);
 	}
 
 	public abstract void method5335(Class233 class233);
@@ -3211,8 +3211,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		aBoolean8309 = true;
 		((Class_ra_Sub3) this).aBoolean8344 = false;
 		new Stream();
-		((Class_ra_Sub3) this).aClass387_Sub3Array8288 = new Class387_Sub3[7];
-		((Class_ra_Sub3) this).aClass387_Sub3Array8267 = new Class387_Sub3[7];
+		((Class_ra_Sub3) this).aClass387_Sub3Array8288 = new DrawableModel_Sub3[7];
+		((Class_ra_Sub3) this).aClass387_Sub3Array8267 = new DrawableModel_Sub3[7];
 		((Class_ra_Sub3) this).aClass233_8363 = new Class233();
 		((Class_ra_Sub3) this).aClass222_8250 = new Class222();
 		anInt8366 = -1;
@@ -3638,9 +3638,9 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		((Class_ra_Sub3) this).aClass66_Sub2_8284 = (Class66_Sub2) class66;
 	}
 
-	public final Class387 method5037(Class64 class64, int i, int i_639_,
-			int i_640_, int i_641_) {
-		return new Class387_Sub3(this, class64, i, i_640_, i_641_, i_639_);
+	public final DrawableModel method5037(Class64 class64, int i, int i_639_,
+                                          int i_640_, int i_641_) {
+		return new DrawableModel_Sub3(this, class64, i, i_640_, i_641_, i_639_);
 	}
 
 	abstract Interface9_Impl2 method5515(Class55 class55, int i, int i_642_,

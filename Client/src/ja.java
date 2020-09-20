@@ -4,7 +4,6 @@
 import java.awt.Canvas;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.EmptyStackException;
 
 public class ja extends GraphicsToolkit implements Interface25 {
 	Class453 aClass453_6680;
@@ -520,8 +519,8 @@ public class ja extends GraphicsToolkit implements Interface25 {
 		fs[2] = f_193_;
 	}
 
-	public Class387 method5037(Class64 class64, int i, int i_194_, int i_195_,
-			int i_196_) {
+	public DrawableModel method5037(Class64 class64, int i, int i_194_, int i_195_,
+                                    int i_196_) {
 		return new h(this, ((ja) this).aBa6682, class64, i, i_194_, i_195_,
 				i_196_);
 	}
@@ -1835,8 +1834,8 @@ public class ja extends GraphicsToolkit implements Interface25 {
 
 	native void ne();
 
-	public Class387 method5116(Class64 class64, int i, int i_608_, int i_609_,
-			int i_610_) {
+	public DrawableModel method5116(Class64 class64, int i, int i_608_, int i_609_,
+                                    int i_610_) {
 		return new h(this, ((ja) this).aBa6682, class64, i, i_608_, i_609_,
 				i_610_);
 	}

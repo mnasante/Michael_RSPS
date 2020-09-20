@@ -12,7 +12,7 @@ public class Class15 {
 	int anInt184;
 	int anInt185;
 	boolean aBoolean186;
-	Class387_Sub1[] aClass387_Sub1Array187;
+	DrawableModel_Sub1[] aClass387_Sub1Array187;
 	float[] aFloatArray188;
 	Class222 aClass222_189;
 	Class233 aClass233_190;
@@ -42,7 +42,7 @@ public class Class15 {
 	int anInt214;
 	int anInt215;
 	boolean aBoolean216;
-	Class387_Sub1[] aClass387_Sub1Array217;
+	DrawableModel_Sub1[] aClass387_Sub1Array217;
 	float[] aFloatArray218;
 	Class222 aClass222_219;
 	float aFloat220;
@@ -64,11 +64,11 @@ public class Class15 {
 		((Class15) this).aClass222_189 = new Class222();
 		((Class15) this).aClass233_194 = new Class233();
 		((Class15) this).aClass233_195 = new Class233();
-		((Class15) this).anIntArray213 = new int[Class387_Sub1.anInt7810];
-		((Class15) this).aFloatArray197 = new float[Class387_Sub1.anInt7810];
-		((Class15) this).aFloatArray188 = new float[Class387_Sub1.anInt7810];
-		((Class15) this).aFloatArray199 = new float[Class387_Sub1.anInt7810];
-		((Class15) this).aFloatArray200 = new float[Class387_Sub1.anInt7810];
+		((Class15) this).anIntArray213 = new int[DrawableModel_Sub1.anInt7810];
+		((Class15) this).aFloatArray197 = new float[DrawableModel_Sub1.anInt7810];
+		((Class15) this).aFloatArray188 = new float[DrawableModel_Sub1.anInt7810];
+		((Class15) this).aFloatArray199 = new float[DrawableModel_Sub1.anInt7810];
+		((Class15) this).aFloatArray200 = new float[DrawableModel_Sub1.anInt7810];
 		((Class15) this).anIntArray201 = new int[8];
 		((Class15) this).anIntArray202 = new int[8];
 		((Class15) this).anIntArray203 = new int[8];
@@ -78,8 +78,8 @@ public class Class15 {
 		((Class15) this).aFloat212 = 0.0F;
 		((Class15) this).aFloat191 = 1.0F;
 		((Class15) this).aFloatArray210 = new float[2];
-		((Class15) this).aClass387_Sub1Array187 = new Class387_Sub1[7];
-		((Class15) this).aClass387_Sub1Array217 = new Class387_Sub1[7];
+		((Class15) this).aClass387_Sub1Array187 = new DrawableModel_Sub1[7];
+		((Class15) this).aClass387_Sub1Array217 = new DrawableModel_Sub1[7];
 		((Class15) this).aFloatArray218 = new float[64];
 		((Class15) this).aFloatArray181 = new float[64];
 		((Class15) this).aFloatArray223 = new float[64];
@@ -89,13 +89,13 @@ public class Class15 {
 		((Class15) this).aClass_ra_Sub1_182 = class_ra_sub1;
 		((Class15) this).aClass2_192 = new Class2(class_ra_sub1, this);
 		for (int i = 0; i < 7; i++) {
-			((Class15) this).aClass387_Sub1Array187[i] = new Class387_Sub1(
+			((Class15) this).aClass387_Sub1Array187[i] = new DrawableModel_Sub1(
 					((Class15) this).aClass_ra_Sub1_182);
-			((Class15) this).aClass387_Sub1Array217[i] = new Class387_Sub1(
+			((Class15) this).aClass387_Sub1Array217[i] = new DrawableModel_Sub1(
 					((Class15) this).aClass_ra_Sub1_182);
 		}
-		((Class15) this).anIntArray206 = new int[Class387_Sub1.anInt7787];
-		for (int i = 0; i < Class387_Sub1.anInt7787; i++)
+		((Class15) this).anIntArray206 = new int[DrawableModel_Sub1.anInt7787];
+		for (int i = 0; i < DrawableModel_Sub1.anInt7787; i++)
 			((Class15) this).anIntArray206[i] = -1;
 	}
 

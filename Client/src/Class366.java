@@ -128,9 +128,9 @@ public class Class366 {
 		}
 	}
 
-	public Class387 method4543(GraphicsToolkit class_ra, int i, Class144 class144,
-			Class507 class507, Class477 class477, Class395 class395,
-			Interface23 interface23, Class438 class438, int i_15_) {
+	public DrawableModel method4543(GraphicsToolkit class_ra, int i, Class144 class144,
+                                    Class507 class507, Class477 class477, Class395 class395,
+                                    Interface23 interface23, Class438 class438, int i_15_) {
 		try {
 			if (-1 != anInt3974 * 164936249)
 				return (class507.method6269(anInt3974 * 164936249, 491367243)
@@ -138,15 +138,15 @@ public class Class366 {
 								-218177955));
 			int i_16_ = class438 != null ? i | class438.method5829(-1790708337)
 					: i;
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (aClass348_3980) {
-				class387 = (Class387) aClass348_3980
+				drawableModel = (DrawableModel) aClass348_3980
 						.method4184(5093099708756449067L * (((Class366) this).aLong3975));
 			}
-			if (class387 == null
-					|| class_ra.method5017(class387.m(), i_16_) != 0) {
-				if (null != class387)
-					i_16_ = class_ra.method5004(i_16_, class387.m());
+			if (drawableModel == null
+					|| class_ra.method5017(drawableModel.m(), i_16_) != 0) {
+				if (null != drawableModel)
+					i_16_ = class_ra.method5004(i_16_, drawableModel.m());
 				int i_17_ = i_16_;
 				boolean bool = false;
 				for (int i_18_ = 0; i_18_ < ((Class366) this).anIntArray3969.length; i_18_++) {
@@ -191,52 +191,52 @@ public class Class366 {
 				}
 				Class64 class64 = new Class64(class64s, i_20_);
 				i_17_ |= 0x4000;
-				class387 = class_ra.method5037(class64, i_17_,
+				drawableModel = class_ra.method5037(class64, i_17_,
 						anInt3981 * 1931277641, 64, 768);
 				for (int i_23_ = 0; i_23_ < 10; i_23_++) {
 					for (int i_24_ = 0; i_24_ < aShortArrayArray3970[i_23_].length; i_24_++) {
 						if (anIntArray3973[i_23_] < (Class22.aShortArrayArrayArray278[i_23_][i_24_]).length)
-							class387
+							drawableModel
 									.X(
 											aShortArrayArray3970[i_23_][i_24_],
 											(Class22.aShortArrayArrayArray278[i_23_][i_24_][anIntArray3973[i_23_]]));
 					}
 				}
-				class387.KA(i_16_);
+				drawableModel.KA(i_16_);
 				synchronized (aClass348_3980) {
 					aClass348_3980
 							.method4194(
-									class387,
+                                    drawableModel,
 									(((Class366) this).aLong3975 * 5093099708756449067L));
 				}
 			}
 			if (null == class438)
-				return class387;
-			Class387 class387_25_ = class387.method4755((byte) 4, i_16_, true);
-			class438.method5839(class387_25_, 0, -1353467740);
-			return class387_25_;
+				return drawableModel;
+			DrawableModel drawableModel_25_ = drawableModel.method4755((byte) 4, i_16_, true);
+			class438.method5839(drawableModel_25_, 0, -1353467740);
+			return drawableModel_25_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("pf.u(").append(')').toString());
 		}
 	}
 
-	public Class387 method4544(GraphicsToolkit class_ra, int i, Class144 class144,
-			Class395 class395, Class438 class438, int i_26_, int i_27_,
-			int i_28_, byte i_29_) {
+	public DrawableModel method4544(GraphicsToolkit class_ra, int i, Class144 class144,
+                                    Class395 class395, Class438 class438, int i_26_, int i_27_,
+                                    int i_28_, byte i_29_) {
 		try {
 			int i_30_ = class438 != null ? i | class438.method5829(-1790708337)
 					: i;
 			long l = (long) i_28_ << 32 | (long) (i_27_ << 16) | (long) i_26_;
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (aClass348_3980) {
-				class387 = (Class387) aClass348_3980.method4184(l);
+				drawableModel = (DrawableModel) aClass348_3980.method4184(l);
 			}
 			do {
-				if (class387 == null
-						|| class_ra.method5017(class387.m(), i_30_) != 0) {
-					if (null != class387)
-						i_30_ = class_ra.method5004(i_30_, class387.m());
+				if (drawableModel == null
+						|| class_ra.method5017(drawableModel.m(), i_30_) != 0) {
+					if (null != drawableModel)
+						i_30_ = class_ra.method5004(i_30_, drawableModel.m());
 					int i_31_ = i_30_;
 					Class64[] class64s = new Class64[3];
 					int i_32_ = 0;
@@ -261,20 +261,20 @@ public class Class366 {
 							class64s[i_32_++] = class64;
 						class64 = new Class64(class64s, i_32_);
 						i_31_ |= 0x4000;
-						class387 = class_ra.method5037(class64, i_31_,
+						drawableModel = class_ra.method5037(class64, i_31_,
 								1931277641 * anInt3981, 64, 768);
 						for (int i_33_ = 0; i_33_ < 10; i_33_++) {
 							for (int i_34_ = 0; i_34_ < aShortArrayArray3970[i_33_].length; i_34_++) {
 								if (anIntArray3973[i_33_] < (Class22.aShortArrayArrayArray278[i_33_][i_34_]).length)
-									class387
+									drawableModel
 											.X(
 													(aShortArrayArray3970[i_33_][i_34_]),
 													(Class22.aShortArrayArrayArray278[i_33_][i_34_][anIntArray3973[i_33_]]));
 							}
 						}
-						class387.KA(i_30_);
+						drawableModel.KA(i_30_);
 						synchronized (aClass348_3980) {
-							aClass348_3980.method4194(class387, l);
+							aClass348_3980.method4194(drawableModel, l);
 							break;
 						}
 					}
@@ -282,21 +282,21 @@ public class Class366 {
 				}
 			} while (false);
 			if (class438 == null)
-				return class387;
-			class387 = class387.method4755((byte) 4, i_30_, true);
-			class438.method5839(class387, 0, -716564268);
-			return class387;
+				return drawableModel;
+			drawableModel = drawableModel.method4755((byte) 4, i_30_, true);
+			class438.method5839(drawableModel, 0, -716564268);
+			return drawableModel;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("pf.x(").append(')').toString());
 		}
 	}
 
-	public Class387 method4545(GraphicsToolkit class_ra, int i, Class349 class349,
-			Class144 class144, Class507 class507, Class477 class477,
-			Class395 class395, Interface23 interface23, Class438 class438,
-			Class438 class438_35_, Class438[] class438s, int[] is, int i_36_,
-			boolean bool, Class405 class405, int i_37_) {
+	public DrawableModel method4545(GraphicsToolkit class_ra, int i, Class349 class349,
+                                    Class144 class144, Class507 class507, Class477 class477,
+                                    Class395 class395, Interface23 interface23, Class438 class438,
+                                    Class438 class438_35_, Class438[] class438s, int[] is, int i_36_,
+                                    boolean bool, Class405 class405, int i_37_) {
 		try {
 			if (anInt3974 * 164936249 != -1)
 				return (class507.method6269(anInt3974 * 164936249, 1899433887)
@@ -373,18 +373,18 @@ public class Class366 {
 					}
 				}
 			}
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (aClass348_3979) {
-				class387 = (Class387) aClass348_3979.method4184(l);
+				drawableModel = (DrawableModel) aClass348_3979.method4184(l);
 			}
 			Class350 class350 = null;
 			if (((Class366) this).anInt3976 * 767962207 != -1)
 				class350 = class349.method4202(
 						(((Class366) this).anInt3976 * 767962207), (byte) 29);
-			if (null == class387
-					|| class_ra.method5017(class387.m(), i_38_) != 0) {
-				if (null != class387)
-					i_38_ = class_ra.method5004(i_38_, class387.m());
+			if (null == drawableModel
+					|| class_ra.method5017(drawableModel.m(), i_38_) != 0) {
+				if (null != drawableModel)
+					i_38_ = class_ra.method5004(i_38_, drawableModel.m());
 				int i_52_ = i_38_;
 				boolean bool_53_ = false;
 				for (int i_54_ = 0; i_54_ < is_39_.length; i_54_++) {
@@ -432,12 +432,12 @@ public class Class366 {
 				if (bool_53_) {
 					if (-1L != (4366628042331861927L * ((Class366) this).aLong3966)) {
 						synchronized (aClass348_3979) {
-							class387 = (Class387) (aClass348_3979
+							drawableModel = (DrawableModel) (aClass348_3979
 									.method4184(4366628042331861927L * ((Class366) this).aLong3966));
 						}
 					}
-					if (null == class387
-							|| class_ra.method5017(class387.m(), i_38_) != 0)
+					if (null == drawableModel
+							|| class_ra.method5017(drawableModel.m(), i_38_) != 0)
 						return null;
 				} else {
 					Class64[] class64s = new Class64[is_39_.length];
@@ -496,36 +496,36 @@ public class Class366 {
 					}
 					Class64 class64 = new Class64(class64s, class64s.length);
 					i_52_ |= 0x4000;
-					class387 = class_ra.method5037(class64, i_52_,
+					drawableModel = class_ra.method5037(class64, i_52_,
 							1931277641 * anInt3981, 64, 850);
 					for (int i_69_ = 0; i_69_ < 10; i_69_++) {
 						for (int i_70_ = 0; i_70_ < aShortArrayArray3970[i_69_].length; i_70_++) {
 							if (anIntArray3973[i_69_] < (Class22.aShortArrayArrayArray278[i_69_][i_70_]).length)
-								class387
+								drawableModel
 										.X(
 												aShortArrayArray3970[i_69_][i_70_],
 												(Class22.aShortArrayArrayArray278[i_69_][i_70_][anIntArray3973[i_69_]]));
 						}
 					}
 					if (bool) {
-						class387.KA(i_38_);
+						drawableModel.KA(i_38_);
 						synchronized (aClass348_3979) {
-							aClass348_3979.method4194(class387, l);
+							aClass348_3979.method4194(drawableModel, l);
 						}
 						((Class366) this).aLong3966 = l * -2813682692256545769L;
 					}
 				}
 			}
-			Class387 class387_71_ = class387.method4755((byte) 4, i_38_, true);
+			DrawableModel drawableModel_71_ = drawableModel.method4755((byte) 4, i_38_, true);
 			if (!bool_47_ && !bool_50_)
-				return class387_71_;
+				return drawableModel_71_;
 			Class222[] class222s = null;
 			if (class350 != null)
 				class222s = class350.method4207((byte) 92);
 			if (bool_50_ && class222s != null) {
 				for (int i_72_ = 0; i_72_ < is.length; i_72_++) {
 					if (null != class222s[i_72_])
-						class387_71_.method4741(class222s[i_72_], 1 << i_72_,
+						drawableModel_71_.method4741(class222s[i_72_], 1 << i_72_,
 								true);
 				}
 			}
@@ -533,7 +533,7 @@ public class Class366 {
 			int i_74_ = 1;
 			while (i_73_ < i_48_) {
 				if (null != class438s[i_73_])
-					class438s[i_73_].method5830(class387_71_, 0, i_74_,
+					class438s[i_73_].method5830(drawableModel_71_, 0, i_74_,
 							(byte) 57);
 				i_73_++;
 				i_74_ <<= 1;
@@ -549,25 +549,25 @@ public class Class366 {
 						Class222 class222 = new Class222();
 						class222.method2059(0.0F, 1.0F, 0.0F, Class220
 								.method2049(i_74_));
-						class387_71_.method4741(class222, 1 << i_73_, false);
+						drawableModel_71_.method4741(class222, 1 << i_73_, false);
 					}
 				}
 			}
 			if (bool_50_ && class222s != null) {
 				for (i_73_ = 0; i_73_ < is.length; i_73_++) {
 					if (class222s[i_73_] != null)
-						class387_71_.method4741(class222s[i_73_], 1 << i_73_,
+						drawableModel_71_.method4741(class222s[i_73_], 1 << i_73_,
 								false);
 				}
 			}
 			if (class438 != null && null != class438_35_)
-				Class400.method4929(class387_71_, class438, class438_35_,
+				Class400.method4929(drawableModel_71_, class438, class438_35_,
 						-2147197181);
 			else if (null != class438)
-				class438.method5839(class387_71_, 0, -390031954);
+				class438.method5839(drawableModel_71_, 0, -390031954);
 			else if (null != class438_35_)
-				class438_35_.method5839(class387_71_, 0, 1377070013);
-			return class387_71_;
+				class438_35_.method5839(drawableModel_71_, 0, 1377070013);
+			return drawableModel_71_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("pf.d(").append(')').toString());

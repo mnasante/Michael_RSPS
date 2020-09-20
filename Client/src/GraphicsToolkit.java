@@ -315,8 +315,8 @@ public abstract class GraphicsToolkit {
 
 	public abstract Class233 method5036();
 
-	public abstract Class387 method5037(Class64 class64, int i, int i_136_,
-			int i_137_, int i_138_);
+	public abstract DrawableModel method5037(Class64 class64, int i, int i_136_,
+                                             int i_137_, int i_138_);
 
 	public abstract void method5038(int i, int i_139_, int i_140_, int i_141_,
 			int i_142_, int i_143_, int i_144_, int i_145_, int i_146_);
@@ -596,8 +596,8 @@ public abstract class GraphicsToolkit {
 
 	public abstract void method5115(int i);
 
-	public abstract Class387 method5116(Class64 class64, int i, int i_328_,
-			int i_329_, int i_330_);
+	public abstract DrawableModel method5116(Class64 class64, int i, int i_328_,
+                                             int i_329_, int i_330_);
 
 	abstract Class52_Sub2 method5117(Canvas canvas, int i, int i_331_);
 

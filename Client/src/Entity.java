@@ -23,7 +23,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 	public int[] anIntArray10079;
 	public int[] anIntArray10080;
 	public int[] anIntArray10081;
-	public Class387[] aClass387Array10082;
+	public DrawableModel[] aDrawableModelArray10082;
 	public int[] anIntArray10083;
 	public Class386 aClass386_10084;
 	public int[] anIntArray10085;
@@ -391,16 +391,16 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 		}
 	}
 
-	void method4423(Class387 class387, int i) {
+	void method4423(DrawableModel drawableModel, int i) {
 		try {
 			int i_52_ = aClass386_10113.anInt4144 * 259411823;
 			int i_53_ = 259411823 * aClass386_10111.anInt4144;
 			if (0 != i_52_ || i_53_ != 0) {
-				int i_54_ = class387.YA() / 2;
-				class387.ia(0, -i_54_, 0);
-				class387.EA(i_52_ & 0x3fff);
-				class387.t(i_53_ & 0x3fff);
-				class387.ia(0, i_54_, 0);
+				int i_54_ = drawableModel.YA() / 2;
+				drawableModel.ia(0, -i_54_, 0);
+				drawableModel.EA(i_52_ & 0x3fff);
+				drawableModel.t(i_53_ & 0x3fff);
+				drawableModel.ia(0, i_54_, 0);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -439,10 +439,10 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 						if (class56.anInt568 * -1418960779 >= 0)
 							i_61_ |= 0x7;
 					}
-					Class387 class387 = (aClass387Array10082[i_59_ + 1] = class398
+					DrawableModel drawableModel = (aDrawableModelArray10082[i_59_ + 1] = class398
 							.method4917(class_ra, i_61_, class56.aClass438_569,
 									i_60_, 2124203678));
-					if (null != class387) {
+					if (null != drawableModel) {
 						if (class56.anInt568 * -1418960779 >= 0
 								&& null != class350.anIntArrayArray3710
 								&& (class350.anIntArrayArray3710[-1418960779
@@ -479,32 +479,32 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 								int i_66_ = ((i_65_ + -709199872
 										* class56.anInt571 - i_57_) & 0x3fff);
 								if (0 != i_66_)
-									class387.f(i_66_);
+									drawableModel.f(i_66_);
 								int i_67_ = Class220.anIntArray2483[i_66_];
 								int i_68_ = Class220.anIntArray2474[i_66_];
 								int i_69_ = i_68_ * i_62_ + i_64_ * i_67_ >> 14;
 								i_64_ = i_68_ * i_64_ - i_67_ * i_62_ >> 14;
 								i_62_ = i_69_;
 							}
-							class387.ia(i_62_, i_63_, i_64_);
+							drawableModel.ia(i_62_, i_63_, i_64_);
 						} else if (class56.anInt571 * -885344433 != 0)
-							class387.f(-709199872 * class56.anInt571);
+							drawableModel.f(-709199872 * class56.anInt571);
 						if (class56.height * 1615294553 != 0)
-							class387.ia(0,
+							drawableModel.ia(0,
 									-(1615294553 * class56.height) << 2, 0);
 						if (bool) {
 							if (0 != -155466425
 									* ((Entity) this).anInt10097)
-								class387
+								drawableModel
 										.t((((Entity) this).anInt10097)
 												* -155466425);
 							if (0 != -197572281
 									* ((Entity) this).anInt10073)
-								class387
+								drawableModel
 										.EA((((Entity) this).anInt10073)
 												* -197572281);
 							if (0 != (((Entity) this).anInt10074 * -104151209))
-								class387
+								drawableModel
 										.ia(
 												0,
 												(-104151209 * ((Entity) this).anInt10074),
@@ -512,7 +512,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 						}
 					}
 				} else
-					aClass387Array10082[1 + i_59_] = null;
+					aDrawableModelArray10082[1 + i_59_] = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -884,15 +884,15 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 		scenePositionXQueue = new int[i];
 		scenePositionYQueue = new int[i];
 		aByteArray10110 = new byte[i];
-		aClass387Array10082 = new Class387[5];
+		aDrawableModelArray10082 = new DrawableModel[5];
 		currentGraphics = new Graphics[4];
 		for (int i_125_ = 0; i_125_ < 4; i_125_++)
 			currentGraphics[i_125_] = new Graphics(this);
 		aClass438_Sub2_Sub1Array10112 = (new Class438_Sub2_Sub1[Class82_Sub18.aClass405_6892.anIntArray5267.length]);
 	}
 
-	void method4445(GraphicsToolkit class_ra, Class387[] class387s, Class222 class222,
-			boolean bool, int i) {
+	void method4445(GraphicsToolkit class_ra, DrawableModel[] drawableModels, Class222 class222,
+					boolean bool, int i) {
 		try {
 			if (!bool) {
 				int i_126_ = 0;
@@ -901,13 +901,13 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 				int i_129_ = 0;
 				int i_130_ = -1;
 				int i_131_ = -1;
-				Class85[][] class85s = new Class85[class387s.length][];
-				Class68[][] class68s = new Class68[class387s.length][];
-				for (int i_132_ = 0; i_132_ < class387s.length; i_132_++) {
-					if (class387s[i_132_] != null) {
-						class387s[i_132_].method4786(class222);
-						class85s[i_132_] = class387s[i_132_].method4781();
-						class68s[i_132_] = class387s[i_132_].method4728();
+				Class85[][] class85s = new Class85[drawableModels.length][];
+				Class68[][] class68s = new Class68[drawableModels.length][];
+				for (int i_132_ = 0; i_132_ < drawableModels.length; i_132_++) {
+					if (drawableModels[i_132_] != null) {
+						drawableModels[i_132_].method4786(class222);
+						class85s[i_132_] = drawableModels[i_132_].method4781();
+						class68s[i_132_] = drawableModels[i_132_].method4728();
 						if (null != class85s[i_132_]) {
 							i_130_ = i_132_;
 							i_127_++;
@@ -932,7 +932,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 					else {
 						class85s_133_ = new Class85[i_126_];
 						int i_134_ = 0;
-						for (int i_135_ = 0; i_135_ < class387s.length; i_135_++) {
+						for (int i_135_ = 0; i_135_ < drawableModels.length; i_135_++) {
 							if (null != class85s[i_135_]) {
 								System.arraycopy(class85s[i_135_], 0,
 										class85s_133_, i_134_,
@@ -948,7 +948,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 					else {
 						class68s_137_ = new Class68[i_128_];
 						int i_138_ = 0;
-						for (int i_139_ = 0; i_139_ < class387s.length; i_139_++) {
+						for (int i_139_ = 0; i_139_ < drawableModels.length; i_139_++) {
 							if (class68s[i_139_] != null) {
 								System.arraycopy(class68s[i_139_], 0,
 										class68s_137_, i_138_,

@@ -38,7 +38,7 @@ public class a implements Interface25 {
 
 	native void ha(long l, GraphicsToolkit class_ra, int i, int i_14_);
 
-	Class387 method276(h var_h, byte i, int i_15_, boolean bool) {
+	DrawableModel method276(h var_h, byte i, int i_15_, boolean bool) {
 		boolean bool_16_ = false;
 		h var_h_17_;
 		h var_h_18_;
@@ -69,18 +69,18 @@ public class a implements Interface25 {
 	native void P(long l, long l_25_, long l_26_, int i, int i_27_, int i_28_,
 			boolean bool);
 
-	void method279(Class387 class387, Class222 class222, int[] is, int i) {
+	void method279(DrawableModel drawableModel, Class222 class222, int[] is, int i) {
 		((a) this).aClass233_6673.method2145(class222);
-		wa(((a) this).nativeid, ((h) (h) class387).nativeid,
+		wa(((a) this).nativeid, ((h) (h) drawableModel).nativeid,
 				((a) this).aClass233_6673.aFloatArray2594, is, i);
 	}
 
 	native boolean ya(long l, long l_29_, int i, int i_30_, float[] fs,
 			boolean bool);
 
-	void method280(Class387 class387, int[] is, Class222 class222) {
+	void method280(DrawableModel drawableModel, int[] is, Class222 class222) {
 		((a) this).aClass233_6673.method2145(class222);
-		J(((a) this).nativeid, ((h) (h) class387).nativeid, is,
+		J(((a) this).nativeid, ((h) (h) drawableModel).nativeid, is,
 				((a) this).aClass233_6673.aFloatArray2594);
 	}
 
@@ -155,10 +155,10 @@ public class a implements Interface25 {
 	native void aj(long l, long l_84_, long l_85_, int i, int i_86_, int i_87_,
 			boolean bool);
 
-	boolean method284(Class387 class387, int i, int i_88_, Class222 class222,
-			boolean bool) {
+	boolean method284(DrawableModel drawableModel, int i, int i_88_, Class222 class222,
+                      boolean bool) {
 		((a) this).aClass233_6673.method2145(class222);
-		return ya(((a) this).nativeid, ((h) (h) class387).nativeid, i, i_88_,
+		return ya(((a) this).nativeid, ((h) (h) drawableModel).nativeid, i, i_88_,
 				((a) this).aClass233_6673.aFloatArray2594, bool);
 	}
 
@@ -170,10 +170,10 @@ public class a implements Interface25 {
 
 	native void J(long l, long l_92_, int[] is, float[] fs);
 
-	void method285(Class387 class387, Class387 class387_93_, int i, int i_94_,
-			int i_95_, boolean bool) {
-		P(((a) this).nativeid, ((h) (h) class387).nativeid,
-				((h) (h) class387_93_).nativeid, i, i_94_, i_95_, bool);
+	void method285(DrawableModel drawableModel, DrawableModel drawableModel_93_, int i, int i_94_,
+                   int i_95_, boolean bool) {
+		P(((a) this).nativeid, ((h) (h) drawableModel).nativeid,
+				((h) (h) drawableModel_93_).nativeid, i, i_94_, i_95_, bool);
 	}
 
 	native void as(long l, GraphicsToolkit class_ra, int i, int i_96_, int i_97_,

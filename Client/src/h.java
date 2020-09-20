@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class h extends Class387 implements Interface25 {
+public class h extends DrawableModel implements Interface25 {
 	long nativeid;
 	ja aJa6674;
 	ba aBa6675;
@@ -73,7 +73,7 @@ public class h extends Class387 implements Interface25 {
 		((h) this).aJa6674.method5571().method280(this, is, class222);
 	}
 
-	public Class387 method4755(byte i, int i_3_, boolean bool) {
+	public DrawableModel method4755(byte i, int i_3_, boolean bool) {
 		return ((h) this).aJa6674.method5571().method276(this, i, i_3_, bool);
 	}
 
@@ -85,9 +85,9 @@ public class h extends Class387 implements Interface25 {
 
 	public native int m();
 
-	public void method4745(Class387 class387, int i, int i_7_, int i_8_,
-			boolean bool) {
-		((h) this).aJa6674.method5571().method285(this, class387, i, i_7_,
+	public void method4745(DrawableModel drawableModel, int i, int i_7_, int i_8_,
+                           boolean bool) {
+		((h) this).aJa6674.method5571().method285(this, drawableModel, i, i_7_,
 				i_8_, bool);
 	}
 
@@ -146,9 +146,9 @@ public class h extends Class387 implements Interface25 {
 				class222, bool);
 	}
 
-	public void method4779(Class387 class387, int i, int i_38_, int i_39_,
-			boolean bool) {
-		((h) this).aJa6674.method5571().method285(this, class387, i, i_38_,
+	public void method4779(DrawableModel drawableModel, int i, int i_38_, int i_39_,
+                           boolean bool) {
+		((h) this).aJa6674.method5571().method285(this, drawableModel, i, i_38_,
 				i_39_, bool);
 	}
 
@@ -231,15 +231,15 @@ public class h extends Class387 implements Interface25 {
 			int[] is_81_, int[] is_82_, int[] is_83_, int i_84_, int i_85_,
 			int i_86_, int i_87_, int i_88_, int i_89_, int[] is_90_);
 
-	public Class387 method4748(byte i, int i_91_, boolean bool) {
+	public DrawableModel method4748(byte i, int i_91_, boolean bool) {
 		return ((h) this).aJa6674.method5571().method276(this, i, i_91_, bool);
 	}
 
-	public Class387 method4770(byte i, int i_92_, boolean bool) {
+	public DrawableModel method4770(byte i, int i_92_, boolean bool) {
 		return ((h) this).aJa6674.method5571().method276(this, i, i_92_, bool);
 	}
 
-	public Class387 method4749(byte i, int i_93_, boolean bool) {
+	public DrawableModel method4749(byte i, int i_93_, boolean bool) {
 		return ((h) this).aJa6674.method5571().method276(this, i, i_93_, bool);
 	}
 
@@ -323,9 +323,9 @@ public class h extends Class387 implements Interface25 {
 		}
 	}
 
-	public void method4747(Class387 class387, int i, int i_117_, int i_118_,
-			boolean bool) {
-		((h) this).aJa6674.method5571().method285(this, class387, i, i_117_,
+	public void method4747(DrawableModel drawableModel, int i, int i_117_, int i_118_,
+                           boolean bool) {
+		((h) this).aJa6674.method5571().method285(this, drawableModel, i, i_117_,
 				i_118_, bool);
 	}
 
@@ -775,7 +775,7 @@ public class h extends Class387 implements Interface25 {
 
 	native void gp(byte i, byte[] is);
 
-	public Class387 method4750(byte i, int i_233_, boolean bool) {
+	public DrawableModel method4750(byte i, int i_233_, boolean bool) {
 		return ((h) this).aJa6674.method5571().method276(this, i, i_233_, bool);
 	}
 

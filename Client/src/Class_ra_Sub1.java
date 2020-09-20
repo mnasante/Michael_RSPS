@@ -4961,16 +4961,16 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	}
 
 	public void method5115(int i) {
-		Class387_Sub1.anInt7787 = Class387_Sub1.anInt7810 = i;
+		DrawableModel_Sub1.anInt7787 = DrawableModel_Sub1.anInt7810 = i;
 		if (-922307687 * ((Class_ra_Sub1) this).anInt7999 > 1)
 			throw new IllegalStateException();
 		method5210(((Class_ra_Sub1) this).anInt7999 * -922307687);
 		method5201(0);
 	}
 
-	public Class387 method5116(Class64 class64, int i, int i_1214_,
-			int i_1215_, int i_1216_) {
-		return new Class387_Sub1(this, class64, i, i_1215_, i_1216_, i_1214_);
+	public DrawableModel method5116(Class64 class64, int i, int i_1214_,
+                                    int i_1215_, int i_1216_) {
+		return new DrawableModel_Sub1(this, class64, i, i_1215_, i_1216_, i_1214_);
 	}
 
 	public int method5126(int i, int i_1217_) {
@@ -5294,7 +5294,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	}
 
 	public void method5169(int i) {
-		Class387_Sub1.anInt7787 = Class387_Sub1.anInt7810 = i;
+		DrawableModel_Sub1.anInt7787 = DrawableModel_Sub1.anInt7810 = i;
 		if (-922307687 * ((Class_ra_Sub1) this).anInt7999 > 1)
 			throw new IllegalStateException();
 		method5210(((Class_ra_Sub1) this).anInt7999 * -922307687);
@@ -5319,9 +5319,9 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		((Class_ra_Sub1) this).anInt7983 = -1954754855 * (int) (65535.0F * f);
 	}
 
-	public Class387 method5037(Class64 class64, int i, int i_1311_,
-			int i_1312_, int i_1313_) {
-		return new Class387_Sub1(this, class64, i, i_1312_, i_1313_, i_1311_);
+	public DrawableModel method5037(Class64 class64, int i, int i_1311_,
+                                    int i_1312_, int i_1313_) {
+		return new DrawableModel_Sub1(this, class64, i, i_1312_, i_1313_, i_1311_);
 	}
 
 	public Class57 method5030(int[] is, int i, int i_1314_, int i_1315_,

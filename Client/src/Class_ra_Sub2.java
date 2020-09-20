@@ -89,7 +89,7 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 	int anInt8081;
 	int anInt8082;
 	boolean aBoolean8083;
-	Class387_Sub2[] aClass387_Sub2Array8084;
+	DrawableModel_Sub2[] aClass387_Sub2Array8084;
 	static int anInt8085 = 34168;
 	boolean aBoolean8086;
 	Class222 aClass222_8087;
@@ -194,7 +194,7 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 	int anInt8186;
 	float aFloat8187;
 	float aFloat8188;
-	Class387_Sub2[] aClass387_Sub2Array8189;
+	DrawableModel_Sub2[] aClass387_Sub2Array8189;
 	static int anInt8190 = 2;
 	float aFloat8191;
 	static int anInt8192 = 100663296;
@@ -309,9 +309,9 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 		new Class30_Sub2(this, 3553, Class55.aClass55_557,
 				Class77.aClass77_717, 1, 1);
 		for (int i = 0; i < 7; i++) {
-			((Class_ra_Sub2) this).aClass387_Sub2Array8189[i] = new Class387_Sub2(
+			((Class_ra_Sub2) this).aClass387_Sub2Array8189[i] = new DrawableModel_Sub2(
 					this);
-			((Class_ra_Sub2) this).aClass387_Sub2Array8084[i] = new Class387_Sub2(
+			((Class_ra_Sub2) this).aClass387_Sub2Array8084[i] = new DrawableModel_Sub2(
 					this);
 		}
 		if (((Class_ra_Sub2) this).aBoolean8170) {
@@ -971,9 +971,9 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 		/* empty */
 	}
 
-	public Class387 method5037(Class64 class64, int i, int i_127_, int i_128_,
-			int i_129_) {
-		return new Class387_Sub2(this, class64, i, i_128_, i_129_, i_127_);
+	public DrawableModel method5037(Class64 class64, int i, int i_127_, int i_128_,
+                                    int i_129_) {
+		return new DrawableModel_Sub2(this, class64, i, i_128_, i_129_, i_127_);
 	}
 
 	final synchronized void method5229(int i, int i_130_) {
@@ -2731,8 +2731,8 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 		((Class_ra_Sub2) this).anInt8010 = 8448;
 		((Class_ra_Sub2) this).aFloat8187 = -1.0F;
 		((Class_ra_Sub2) this).aFloat8188 = -1.0F;
-		((Class_ra_Sub2) this).aClass387_Sub2Array8189 = new Class387_Sub2[7];
-		((Class_ra_Sub2) this).aClass387_Sub2Array8084 = new Class387_Sub2[7];
+		((Class_ra_Sub2) this).aClass387_Sub2Array8189 = new DrawableModel_Sub2[7];
+		((Class_ra_Sub2) this).aClass387_Sub2Array8084 = new DrawableModel_Sub2[7];
 		((Class_ra_Sub2) this).aClass298_Sub53_Sub1_8197 = new RsFloatBuffer(
 				8192);
 		((Class_ra_Sub2) this).anIntArray8198 = new int[1];
@@ -3630,9 +3630,9 @@ public class Class_ra_Sub2 extends GraphicsToolkit {
 		OpenGL.glTexEnvfv(8960, 8705, aFloatArray8163, 0);
 	}
 
-	public Class387 method5116(Class64 class64, int i, int i_517_, int i_518_,
-			int i_519_) {
-		return new Class387_Sub2(this, class64, i, i_518_, i_519_, i_517_);
+	public DrawableModel method5116(Class64 class64, int i, int i_517_, int i_518_,
+                                    int i_519_) {
+		return new DrawableModel_Sub2(this, class64, i, i_518_, i_519_, i_517_);
 	}
 
 	public int method5126(int i, int i_520_) {

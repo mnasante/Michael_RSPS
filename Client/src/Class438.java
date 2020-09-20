@@ -246,11 +246,11 @@ public class Class438 {
 		}
 	}
 
-	public final void method5830(Class387 class387, int i, int i_14_, byte i_15_) {
+	public final void method5830(DrawableModel drawableModel, int i, int i_14_, byte i_15_) {
 		try {
 			if (null != ((Class438) this).aClass391_5524.anIntArray4172
 					&& method5838((short) 225)) {
-				class387
+				drawableModel
 						.method4765(
 								(((Class441) ((Class438) this).aClass441_5534).aClass298_Sub37_Sub4_5583),
 								(((Class441) ((Class438) this).aClass441_5534).anInt5584 * 806878007),
@@ -266,7 +266,7 @@ public class Class438 {
 				if (((Class438) this).aBoolean5531
 						&& ((Class438) this).aClass391_5524.anIntArray4174 != null
 						&& (((Class441) ((Class438) this).aClass441_5535).aBoolean5585))
-					class387
+					drawableModel
 							.method4765(
 									(((Class441) ((Class438) this).aClass441_5535).aClass298_Sub37_Sub4_5583),
 									(((Class441) ((Class438) this).aClass441_5535).anInt5584) * 806878007,
@@ -287,18 +287,18 @@ public class Class438 {
 		}
 	}
 
-	public final void method5831(Class387 class387, int i) {
+	public final void method5831(DrawableModel drawableModel, int i) {
 		try {
 			if (((Class438) this).aClass391_5524.anIntArray4172 != null
 					&& method5838((short) 225)) {
-				class387
+				drawableModel
 						.method4737(
 								(((Class441) ((Class438) this).aClass441_5534).aClass298_Sub37_Sub4_5583),
 								(((Class441) (((Class438) this).aClass441_5534)).anInt5584 * 806878007));
 				if (((Class438) this).aBoolean5531
 						&& null != ((Class438) this).aClass391_5524.anIntArray4174
 						&& (((Class441) ((Class438) this).aClass441_5535).aBoolean5585))
-					class387
+					drawableModel
 							.method4737(
 									(((Class441) ((Class438) this).aClass441_5535).aClass298_Sub37_Sub4_5583),
 									(((Class441) ((Class438) this).aClass441_5535).anInt5584) * 806878007);
@@ -410,12 +410,12 @@ public class Class438 {
 		}
 	}
 
-	public final void method5839(Class387 class387, int i, int i_21_) {
+	public final void method5839(DrawableModel drawableModel, int i, int i_21_) {
 		try {
 			if (((Class438) this).aClass391_5524 != null) {
 				if (null != ((Class438) this).aClass391_5524.anIntArray4172
 						&& method5838((short) 225)) {
-					class387
+					drawableModel
 							.method4735(
 									(((Class441) ((Class438) this).aClass441_5534).aClass298_Sub37_Sub4_5583),
 									(((Class441) ((Class438) this).aClass441_5534).anInt5584) * 806878007,
@@ -430,7 +430,7 @@ public class Class438 {
 					if (((Class438) this).aBoolean5531
 							&& (null != ((Class438) this).aClass391_5524.anIntArray4174)
 							&& (((Class441) ((Class438) this).aClass441_5535).aBoolean5585))
-						class387
+						drawableModel
 								.method4735(
 										(((Class441) ((Class438) this).aClass441_5535).aClass298_Sub37_Sub4_5583),
 										(((Class441) ((Class438) this).aClass441_5535).anInt5584) * 806878007,

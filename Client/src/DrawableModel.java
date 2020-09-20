@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public abstract class Class387 {
+public abstract class DrawableModel {
 	static float aFloat4147 = 3.1415927F;
 	protected boolean aBoolean4148 = false;
 
@@ -425,22 +425,22 @@ public abstract class Class387 {
 
 	public abstract int ce();
 
-	public abstract void method4745(Class387 class387_140_, int i, int i_141_,
-			int i_142_, boolean bool);
+	public abstract void method4745(DrawableModel drawableModel_140_, int i, int i_141_,
+									int i_142_, boolean bool);
 
 	public abstract boolean method4746(int i, int i_143_, Class222 class222,
 			boolean bool, int i_144_);
 
-	public abstract void method4747(Class387 class387_145_, int i, int i_146_,
-			int i_147_, boolean bool);
+	public abstract void method4747(DrawableModel drawableModel_145_, int i, int i_146_,
+									int i_147_, boolean bool);
 
-	public abstract Class387 method4748(byte i, int i_148_, boolean bool);
+	public abstract DrawableModel method4748(byte i, int i_148_, boolean bool);
 
 	public abstract boolean eg();
 
-	public abstract Class387 method4749(byte i, int i_149_, boolean bool);
+	public abstract DrawableModel method4749(byte i, int i_149_, boolean bool);
 
-	public abstract Class387 method4750(byte i, int i_150_, boolean bool);
+	public abstract DrawableModel method4750(byte i, int i_150_, boolean bool);
 
 	public abstract boolean ev();
 
@@ -474,7 +474,7 @@ public abstract class Class387 {
 
 	public abstract void f(int i);
 
-	public abstract Class387 method4755(byte i, int i_153_, boolean bool);
+	public abstract DrawableModel method4755(byte i, int i_153_, boolean bool);
 
 	abstract void method4756();
 
@@ -532,7 +532,7 @@ public abstract class Class387 {
 
 	public abstract void EA(int i);
 
-	Class387() {
+	DrawableModel() {
 		/* empty */
 	}
 
@@ -827,7 +827,7 @@ public abstract class Class387 {
 
 	public abstract void du(short i, short i_243_);
 
-	public abstract Class387 method4770(byte i, int i_244_, boolean bool);
+	public abstract DrawableModel method4770(byte i, int i_244_, boolean bool);
 
 	abstract void cd();
 
@@ -859,8 +859,8 @@ public abstract class Class387 {
 
 	public abstract boolean method4778();
 
-	public abstract void method4779(Class387 class387_256_, int i, int i_257_,
-			int i_258_, boolean bool);
+	public abstract void method4779(DrawableModel drawableModel_256_, int i, int i_257_,
+									int i_258_, boolean bool);
 
 	abstract void ka();
 

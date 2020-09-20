@@ -114,8 +114,8 @@ public class Class398 {
 		}
 	}
 
-	public final Class387 method4917(GraphicsToolkit class_ra, int i,
-			Class438 class438, byte i_6_, int i_7_) {
+	public final DrawableModel method4917(GraphicsToolkit class_ra, int i,
+                                          Class438 class438, byte i_6_, int i_7_) {
 		try {
 			return method4918(class_ra, i, false, null, null, 0, 0, 0,
 					class438, i_6_, 1256553464);
@@ -125,9 +125,9 @@ public class Class398 {
 		}
 	}
 
-	public final Class387 method4918(GraphicsToolkit class_ra, int i, boolean bool,
-			Class_xa class_xa, Class_xa class_xa_8_, int i_9_, int i_10_,
-			int i_11_, Class438 class438, byte i_12_, int i_13_) {
+	public final DrawableModel method4918(GraphicsToolkit class_ra, int i, boolean bool,
+                                          Class_xa class_xa, Class_xa class_xa_8_, int i_9_, int i_10_,
+                                          int i_11_, Class438 class438, byte i_12_, int i_13_) {
 		try {
 			int i_14_ = i;
 			bool = bool & 0 != aByte5216;
@@ -140,15 +140,15 @@ public class Class398 {
 			if (128 != ((Class398) this).anInt5217 * -1869386025
 					|| 0 != ((Class398) this).anInt5212 * -614140193)
 				i_14_ |= 0x5;
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (((Class389) ((Class398) this).aClass389_5210).aClass348_4162) {
-				class387 = ((Class387) (((Class389) ((Class398) this).aClass389_5210).aClass348_4162
+				drawableModel = ((DrawableModel) (((Class389) ((Class398) this).aClass389_5210).aClass348_4162
 						.method4184((long) ((((Class398) this).anInt5202 = (1757755963 * ((-559444237 * ((Class398) this).anInt5202) | (class_ra.anInt5298 * 580915349 << 29)))) * -559444237))));
 			}
-			if (class387 == null
-					|| class_ra.method5017(class387.m(), i_14_) != 0) {
-				if (class387 != null)
-					i_14_ = class_ra.method5004(i_14_, class387.m());
+			if (drawableModel == null
+					|| class_ra.method5017(drawableModel.m(), i_14_) != 0) {
+				if (drawableModel != null)
+					i_14_ = class_ra.method5004(i_14_, drawableModel.m());
 				int i_15_ = i_14_;
 				if (((Class398) this).aShortArray5206 != null)
 					i_15_ |= 0x4000;
@@ -162,7 +162,7 @@ public class Class398 {
 					return null;
 				if (class64.anInt630 < 13)
 					class64.method755(2);
-				class387 = (class_ra
+				drawableModel = (class_ra
 						.method5037(
 								class64,
 								i_15_,
@@ -172,45 +172,45 @@ public class Class398 {
 								850 + 1459867577 * ((Class398) this).anInt5214));
 				if (null != ((Class398) this).aShortArray5206) {
 					for (int i_16_ = 0; i_16_ < ((Class398) this).aShortArray5206.length; i_16_++)
-						class387.X(((Class398) this).aShortArray5206[i_16_],
+						drawableModel.X(((Class398) this).aShortArray5206[i_16_],
 								((Class398) this).aShortArray5207[i_16_]);
 				}
 				if (((Class398) this).aShortArray5208 != null) {
 					for (int i_17_ = 0; i_17_ < ((Class398) this).aShortArray5208.length; i_17_++)
-						class387.W(((Class398) this).aShortArray5208[i_17_],
+						drawableModel.W(((Class398) this).aShortArray5208[i_17_],
 								((Class398) this).aShortArray5209[i_17_]);
 				}
-				class387.KA(i_14_);
+				drawableModel.KA(i_14_);
 				synchronized (((Class389) ((Class398) this).aClass389_5210).aClass348_4162) {
 					((Class389) ((Class398) this).aClass389_5210).aClass348_4162
 							.method4194(
-									class387,
+                                    drawableModel,
 									(long) ((((Class398) this).anInt5202 = ((((Class398) this).anInt5202
 											* -559444237 | 580915349 * class_ra.anInt5298 << 29) * 1757755963)) * -559444237));
 				}
 			}
-			Class387 class387_18_ = class387.method4755(i_12_, i_14_, true);
+			DrawableModel drawableModel_18_ = drawableModel.method4755(i_12_, i_14_, true);
 			if (class438 != null)
-				class438.method5839(class387_18_, 0, -400006457);
+				class438.method5839(drawableModel_18_, 0, -400006457);
 			if (-1869386025 * ((Class398) this).anInt5217 != 128
 					|| ((Class398) this).anInt5211 * -64059883 != 128)
-				class387_18_.oa(-1869386025 * ((Class398) this).anInt5217,
+				drawableModel_18_.oa(-1869386025 * ((Class398) this).anInt5217,
 						((Class398) this).anInt5211 * -64059883, -1869386025
 								* ((Class398) this).anInt5217);
 			if (-614140193 * ((Class398) this).anInt5212 != 0) {
 				if (((Class398) this).anInt5212 * -614140193 == 90)
-					class387_18_.f(4096);
+					drawableModel_18_.f(4096);
 				if (-614140193 * ((Class398) this).anInt5212 == 180)
-					class387_18_.f(8192);
+					drawableModel_18_.f(8192);
 				if (270 == -614140193 * ((Class398) this).anInt5212)
-					class387_18_.f(12288);
+					drawableModel_18_.f(12288);
 			}
 			if (bool)
-				class387_18_.pa(aByte5216,
+				drawableModel_18_.pa(aByte5216,
 						167177949 * ((Class398) this).anInt5203, class_xa,
 						class_xa_8_, i_9_, i_10_, i_11_);
-			class387_18_.KA(i);
-			return class387_18_;
+			drawableModel_18_.KA(i);
+			return drawableModel_18_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("qm.p(").append(')').toString());

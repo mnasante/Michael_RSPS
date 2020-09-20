@@ -429,12 +429,12 @@ public class Class264_Sub2 extends Class264 {
 	}
 
 	static void method2507(Class334 class334, int i, int i_111_, int i_112_,
-			Class387 class387, byte i_113_) {
+                           DrawableModel drawableModel, byte i_113_) {
 		try {
-			if (null != class387)
-				class334.method4083(i, i_111_, i_112_, class387.N(), class387
-						.RA(), class387.ya(), class387.YA(), class387.o(),
-						class387.AA(), class387.ha());
+			if (null != drawableModel)
+				class334.method4083(i, i_111_, i_112_, drawableModel.N(), drawableModel
+						.RA(), drawableModel.ya(), drawableModel.YA(), drawableModel.o(),
+						drawableModel.AA(), drawableModel.ha());
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("xk.dd(").append(')').toString());

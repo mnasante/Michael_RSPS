@@ -14,12 +14,12 @@ public class Class365_Sub1_Sub1_Sub3 extends Class365_Sub1_Sub1 {
 		return false;
 	}
 
-	void method4479(GraphicsToolkit class_ra, Class387 class387, Class222 class222,
-			byte i) {
+	void method4479(GraphicsToolkit class_ra, DrawableModel drawableModel, Class222 class222,
+                    byte i) {
 		try {
-			class387.method4786(class222);
-			Class85[] class85s = class387.method4781();
-			Class68[] class68s = class387.method4728();
+			drawableModel.method4786(class222);
+			Class85[] class85s = drawableModel.method4781();
+			Class68[] class68s = drawableModel.method4728();
 			if ((null == ((Class365_Sub1_Sub1_Sub3) this).aClass351_10137 || (((Class365_Sub1_Sub1_Sub3) this).aClass351_10137.aBoolean3772))
 					&& (class85s != null || class68s != null))
 				((Class365_Sub1_Sub1_Sub3) this).aClass351_10137 = Class351
@@ -100,7 +100,7 @@ public class Class365_Sub1_Sub1_Sub3 extends Class365_Sub1_Sub1 {
 		return false;
 	}
 
-	Class387 method4482(GraphicsToolkit class_ra, int i, int i_13_, int i_14_) {
+	DrawableModel method4482(GraphicsToolkit class_ra, int i, int i_13_, int i_14_) {
 		try {
 			Class398 class398 = Class158_Sub1.aClass389_8568.method4857(i_13_,
 					-1949428738);
@@ -125,11 +125,11 @@ public class Class365_Sub1_Sub1_Sub3 extends Class365_Sub1_Sub1 {
 
 	void method4357(GraphicsToolkit class_ra, int i) {
 		try {
-			Class387 class387 = method4482(class_ra, 0,
+			DrawableModel drawableModel = method4482(class_ra, 0,
 					(-743331725 * ((Class365_Sub1_Sub1_Sub3) this).anInt10135),
 					-1760774279);
-			if (class387 != null)
-				method4479(class_ra, class387, method4347(), (byte) -58);
+			if (drawableModel != null)
+				method4479(class_ra, drawableModel, method4347(), (byte) -58);
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("akr.bb(").append(')').toString());
@@ -216,45 +216,45 @@ public class Class365_Sub1_Sub1_Sub3 extends Class365_Sub1_Sub1 {
 	}
 
 	Class335 method4370(GraphicsToolkit class_ra) {
-		Class387 class387 = method4482(class_ra,
+		DrawableModel drawableModel = method4482(class_ra,
 				0x800 | (0 != (((Class365_Sub1_Sub1_Sub3) this).anInt10139)
 						* -657768375 ? 5 : 0),
 				(-743331725 * ((Class365_Sub1_Sub1_Sub3) this).anInt10135),
 				-1821357765);
-		if (null == class387)
+		if (null == drawableModel)
 			return null;
 		if (-657768375 * ((Class365_Sub1_Sub1_Sub3) this).anInt10139 != 0)
-			class387
+			drawableModel
 					.f(1510098944 * ((Class365_Sub1_Sub1_Sub3) this).anInt10139);
 		Class222 class222 = method4347();
-		method4479(class_ra, class387, class222, (byte) -14);
+		method4479(class_ra, drawableModel, class222, (byte) -14);
 		Class335 class335 = Class73.method818(false, 1620653169);
-		class387.method4739(class222, aClass302_Sub1Array7726[0], 0);
+		drawableModel.method4739(class222, aClass302_Sub1Array7726[0], 0);
 		if (null != ((Class365_Sub1_Sub1_Sub3) this).aClass351_10137) {
 			Class69 class69 = ((Class365_Sub1_Sub1_Sub3) this).aClass351_10137
 					.method4229();
 			class_ra.method5042(class69);
 		}
-		((Class365_Sub1_Sub1_Sub3) this).aBoolean10138 = class387.i();
-		((Class365_Sub1_Sub1_Sub3) this).anInt10134 = class387.YA() * 2028765461;
-		class387.n();
+		((Class365_Sub1_Sub1_Sub3) this).aBoolean10138 = drawableModel.i();
+		((Class365_Sub1_Sub1_Sub3) this).anInt10134 = drawableModel.YA() * 2028765461;
+		drawableModel.n();
 		return class335;
 	}
 
 	void method4371(GraphicsToolkit class_ra) {
-		Class387 class387 = method4482(class_ra, 0,
+		DrawableModel drawableModel = method4482(class_ra, 0,
 				(-743331725 * ((Class365_Sub1_Sub1_Sub3) this).anInt10135),
 				-1484520412);
-		if (class387 != null)
-			method4479(class_ra, class387, method4347(), (byte) -82);
+		if (drawableModel != null)
+			method4479(class_ra, drawableModel, method4347(), (byte) -82);
 	}
 
 	void method4373(GraphicsToolkit class_ra) {
-		Class387 class387 = method4482(class_ra, 0,
+		DrawableModel drawableModel = method4482(class_ra, 0,
 				(-743331725 * ((Class365_Sub1_Sub1_Sub3) this).anInt10135),
 				-1936222136);
-		if (class387 != null)
-			method4479(class_ra, class387, method4347(), (byte) -12);
+		if (drawableModel != null)
+			method4479(class_ra, drawableModel, method4347(), (byte) -12);
 	}
 
 	boolean method4372(GraphicsToolkit class_ra, int i, int i_22_) {
@@ -276,28 +276,28 @@ public class Class365_Sub1_Sub1_Sub3 extends Class365_Sub1_Sub1 {
 
 	Class335 method4394(GraphicsToolkit class_ra, int i) {
 		try {
-			Class387 class387 = method4482(class_ra,
+			DrawableModel drawableModel = method4482(class_ra,
 					0x800 | (0 != (((Class365_Sub1_Sub1_Sub3) this).anInt10139)
 							* -657768375 ? 5 : 0),
 					(-743331725 * ((Class365_Sub1_Sub1_Sub3) this).anInt10135),
 					-1982313638);
-			if (null == class387)
+			if (null == drawableModel)
 				return null;
 			if (-657768375 * ((Class365_Sub1_Sub1_Sub3) this).anInt10139 != 0)
-				class387
+				drawableModel
 						.f(1510098944 * ((Class365_Sub1_Sub1_Sub3) this).anInt10139);
 			Class222 class222 = method4347();
-			method4479(class_ra, class387, class222, (byte) -52);
+			method4479(class_ra, drawableModel, class222, (byte) -52);
 			Class335 class335 = Class73.method818(false, 1486074028);
-			class387.method4739(class222, aClass302_Sub1Array7726[0], 0);
+			drawableModel.method4739(class222, aClass302_Sub1Array7726[0], 0);
 			if (null != ((Class365_Sub1_Sub1_Sub3) this).aClass351_10137) {
 				Class69 class69 = ((Class365_Sub1_Sub1_Sub3) this).aClass351_10137
 						.method4229();
 				class_ra.method5042(class69);
 			}
-			((Class365_Sub1_Sub1_Sub3) this).aBoolean10138 = class387.i();
-			((Class365_Sub1_Sub1_Sub3) this).anInt10134 = class387.YA() * 2028765461;
-			class387.n();
+			((Class365_Sub1_Sub1_Sub3) this).aBoolean10138 = drawableModel.i();
+			((Class365_Sub1_Sub1_Sub3) this).anInt10134 = drawableModel.YA() * 2028765461;
+			drawableModel.n();
 			return class335;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()

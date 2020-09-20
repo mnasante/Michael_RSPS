@@ -18,10 +18,10 @@ public class Class298_Sub9 extends Class298 {
 		/* empty */
 	}
 
-	final Class387 method2891(GraphicsToolkit class_ra, int i, Class438 class438,
-			int i_0_, boolean bool, Class366 class366, byte i_1_) {
+	final DrawableModel method2891(GraphicsToolkit class_ra, int i, Class438 class438,
+                                   int i_0_, boolean bool, Class366 class366, byte i_1_) {
 		try {
-			Class387 class387 = null;
+			DrawableModel drawableModel = null;
 			int i_2_ = i;
 			Class350 class350 = null;
 			if (-1 != i_0_)
@@ -44,11 +44,11 @@ public class Class298_Sub9 extends Class298 {
 					null != class366 ? class366.anIntArray3973 : null, bool,
 					551500137);
 			if (aClass348_7223 != null)
-				class387 = (Class387) aClass348_7223.method4184(l);
-			if (null == class387
-					|| class_ra.method5017(class387.m(), i_2_) != 0) {
-				if (class387 != null)
-					i_2_ = class_ra.method5004(i_2_, class387.m());
+				drawableModel = (DrawableModel) aClass348_7223.method4184(l);
+			if (null == drawableModel
+					|| class_ra.method5017(drawableModel.m(), i_2_) != 0) {
+				if (drawableModel != null)
+					i_2_ = class_ra.method5004(i_2_, drawableModel.m());
 				int i_5_ = i_2_;
 				boolean bool_6_ = false;
 				for (int i_7_ = 0; i_7_ < is.length; i_7_++) {
@@ -99,13 +99,13 @@ public class Class298_Sub9 extends Class298 {
 				Class64 class64 = new Class64(class64s, class64s.length);
 				if (null != class366)
 					i_5_ |= 0x4000;
-				class387 = class_ra.method5037(class64, i_5_,
+				drawableModel = class_ra.method5037(class64, i_5_,
 						anInt7225 * 1310831989, 66, 850);
 				if (class366 != null) {
 					for (int i_16_ = 0; i_16_ < 10; i_16_++) {
 						for (int i_17_ = 0; (i_17_ < Class366.aShortArrayArray3970[i_16_].length); i_17_++) {
 							if (class366.anIntArray3973[i_16_] < (Class22.aShortArrayArrayArray278[i_16_][i_17_]).length)
-								class387
+								drawableModel
 										.X(
 												(Class366.aShortArrayArray3970[i_16_][i_17_]),
 												(Class22.aShortArrayArrayArray278[i_16_][i_17_][class366.anIntArray3973[i_16_]]));
@@ -113,15 +113,15 @@ public class Class298_Sub9 extends Class298 {
 					}
 				}
 				if (null != aClass348_7223) {
-					class387.KA(i_2_);
-					aClass348_7223.method4194(class387, l);
+					drawableModel.KA(i_2_);
+					aClass348_7223.method4194(drawableModel, l);
 				}
 			}
 			if (class438 == null)
-				return class387;
-			Class387 class387_18_ = class387.method4755((byte) 1, i_2_, true);
-			class438.method5839(class387_18_, 0, -1119502581);
-			return class387_18_;
+				return drawableModel;
+			DrawableModel drawableModel_18_ = drawableModel.method4755((byte) 1, i_2_, true);
+			class438.method5839(drawableModel_18_, 0, -1119502581);
+			return drawableModel_18_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("aam.n(").append(')').toString());

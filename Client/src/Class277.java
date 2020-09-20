@@ -5,7 +5,7 @@
 public class Class277 {
 	int anInt2939;
 	int anInt2940;
-	Class387 aClass387_2941;
+	DrawableModel aDrawableModel_2941;
 	Class276 aClass276_2942;
 	static int anInt2943 = 512;
 	Class320 aClass320_2944;
@@ -140,8 +140,8 @@ public class Class277 {
 				}
 			}
 			if (0 == i_3_ || !class_ra.method4996())
-				((Class277) this).aClass387_2941 = null;
-			else if (((Class277) this).aClass387_2941 == null
+				((Class277) this).aDrawableModel_2941 = null;
+			else if (((Class277) this).aDrawableModel_2941 == null
 					&& ((Class277) this).anInt2956 * -680590445 >= 0)
 				method2589(class_ra, -1803183146);
 			if (((Class277) this).aClass277_2960 != null
@@ -169,9 +169,9 @@ public class Class277 {
 					Class64 class64 = Class64.method751(
 							Class465.aClass243_6520,
 							(((Class277) this).anInt2956 * -680590445), 0);
-					((Class277) this).aClass387_2941 = class_ra.method5037(
+					((Class277) this).aDrawableModel_2941 = class_ra.method5037(
 							class64, 1099776, 0, 255, 1);
-					byte[] is = ((Class277) this).aClass387_2941.ah();
+					byte[] is = ((Class277) this).aDrawableModel_2941.ah();
 					if (null == is)
 						((Class277) this).aByteArray2958 = null;
 					else {
@@ -246,11 +246,11 @@ public class Class277 {
 			class_ra.method5043(class222_36_);
 			Class222 class222_37_ = new Class222();
 			if (738421895 * ((Class277) this).anInt2951 != i_34_) {
-				((Class277) this).aClass387_2941.method4742((byte) i_34_,
+				((Class277) this).aDrawableModel_2941.method4742((byte) i_34_,
 						(((Class277) this).aByteArray2958));
 				((Class277) this).anInt2951 = i_34_ * -299787977;
 			}
-			((Class277) this).aClass387_2941.method4739(class222_37_, null, 0);
+			((Class277) this).aDrawableModel_2941.method4739(class222_37_, null, 0);
 			class_ra.method5043(class222);
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -263,7 +263,7 @@ public class Class277 {
 			boolean bool, boolean bool_46_, int i_47_, int i_48_) {
 		try {
 			int i_49_ = 255 - i_47_;
-			if (((Class277) this).aClass387_2941 == null) {
+			if (((Class277) this).aDrawableModel_2941 == null) {
 				class_ra.ba(2, 0);
 				i_43_ = i_43_ + i & 0x3fff;
 				if (((Class277) this).anInt2940 * 1461948177 != -1

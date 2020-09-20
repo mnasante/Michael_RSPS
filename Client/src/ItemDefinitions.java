@@ -235,9 +235,9 @@ public class ItemDefinitions {
 		}
 	}
 
-	public final Class387 method6029(GraphicsToolkit class_ra, int i, int i_10_,
-			Class366 class366, Class438 class438, int i_11_, int i_12_,
-			int i_13_, int i_14_, int i_15_) {
+	public final DrawableModel method6029(GraphicsToolkit class_ra, int i, int i_10_,
+                                          Class366 class366, Class438 class438, int i_11_, int i_12_,
+                                          int i_13_, int i_14_, int i_15_) {
 		try {
 			if (null != ((ItemDefinitions) this).anIntArray5752 && i_10_ > 1) {
 				int i_16_ = -1;
@@ -253,15 +253,15 @@ public class ItemDefinitions {
 			int i_18_ = i;
 			if (null != class438)
 				i_18_ |= class438.method5829(-1790708337);
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (((Class477) ((ItemDefinitions) this).aClass477_5751).aClass348_5994) {
-				class387 = ((Class387) (((Class477) ((ItemDefinitions) this).aClass477_5751).aClass348_5994
+				drawableModel = ((DrawableModel) (((Class477) ((ItemDefinitions) this).aClass477_5751).aClass348_5994
 						.method4184((long) (1027112447 * ((ItemDefinitions) this).anInt5740 | class_ra.anInt5298 * 580915349 << 29))));
 			}
-			if (null == class387
-					|| class_ra.method5017(class387.m(), i_18_) != 0) {
-				if (null != class387)
-					i_18_ = class_ra.method5004(i_18_, class387.m());
+			if (null == drawableModel
+					|| class_ra.method5017(drawableModel.m(), i_18_) != 0) {
+				if (null != drawableModel)
+					i_18_ = class_ra.method5004(i_18_, drawableModel.m());
 				int i_19_ = i_18_;
 				if (((ItemDefinitions) this).aShortArray5711 != null)
 					i_19_ |= 0x8000;
@@ -282,7 +282,7 @@ public class ItemDefinitions {
 					return null;
 				if (class64.anInt630 < 13)
 					class64.method755(2);
-				class387 = (class_ra
+				drawableModel = (class_ra
 						.method5037(
 								class64,
 								i_19_,
@@ -293,56 +293,56 @@ public class ItemDefinitions {
 				if (-1773084507 * ((ItemDefinitions) this).anInt5758 != 128
 						|| 128 != ((ItemDefinitions) this).anInt5702 * 902366341
 						|| 128 != -230848851 * ((ItemDefinitions) this).anInt5739)
-					class387.oa(-1773084507 * ((ItemDefinitions) this).anInt5758,
+					drawableModel.oa(-1773084507 * ((ItemDefinitions) this).anInt5758,
 							902366341 * ((ItemDefinitions) this).anInt5702,
 							((ItemDefinitions) this).anInt5739 * -230848851);
 				if (((ItemDefinitions) this).aShortArray5754 != null) {
 					for (int i_20_ = 0; i_20_ < ((ItemDefinitions) this).aShortArray5754.length; i_20_++) {
 						if (((ItemDefinitions) this).aByteArray5708 != null
 								&& i_20_ < ((ItemDefinitions) this).aByteArray5708.length)
-							class387
+							drawableModel
 									.X(
 											(((ItemDefinitions) this).aShortArray5754[i_20_]),
 											aShortArray5757[(((ItemDefinitions) this).aByteArray5708[i_20_]) & 0xff]);
 						else
-							class387.X(
+							drawableModel.X(
 									(((ItemDefinitions) this).aShortArray5754[i_20_]),
 									(((ItemDefinitions) this).aShortArray5706[i_20_]));
 					}
 				}
 				if (null != ((ItemDefinitions) this).aShortArray5711) {
 					for (int i_21_ = 0; i_21_ < ((ItemDefinitions) this).aShortArray5711.length; i_21_++)
-						class387.W(((ItemDefinitions) this).aShortArray5711[i_21_],
+						drawableModel.W(((ItemDefinitions) this).aShortArray5711[i_21_],
 								((ItemDefinitions) this).aShortArray5712[i_21_]);
 				}
 				if (null != class366) {
 					for (int i_22_ = 0; i_22_ < 10; i_22_++) {
 						for (int i_23_ = 0; (i_23_ < Class366.aShortArrayArray3970[i_22_].length); i_23_++) {
 							if (class366.anIntArray3973[i_22_] < (Class22.aShortArrayArrayArray278[i_22_][i_23_]).length)
-								class387
+								drawableModel
 										.X(
 												(Class366.aShortArrayArray3970[i_22_][i_23_]),
 												(Class22.aShortArrayArrayArray278[i_22_][i_23_][class366.anIntArray3973[i_22_]]));
 						}
 					}
 				}
-				class387.KA(i_18_);
+				drawableModel.KA(i_18_);
 				synchronized (((Class477) ((ItemDefinitions) this).aClass477_5751).aClass348_5994) {
 					((Class477) ((ItemDefinitions) this).aClass477_5751).aClass348_5994
 							.method4194(
-									class387,
+                                    drawableModel,
 									(long) (((ItemDefinitions) this).anInt5740 * 1027112447 | class_ra.anInt5298 * 580915349 << 29));
 				}
 			}
 			if (null != class438 || 0 != i_14_) {
-				class387 = class387.method4755((byte) 1, i_18_, true);
+				drawableModel = drawableModel.method4755((byte) 1, i_18_, true);
 				if (null != class438)
-					class438.method5839(class387, 0, -1330952412);
+					class438.method5839(drawableModel, 0, -1330952412);
 				if (0 != i_14_)
-					class387.PA(i_11_, i_12_, i_13_, i_14_);
+					drawableModel.PA(i_11_, i_12_, i_13_, i_14_);
 			}
-			class387.KA(i);
-			return class387;
+			drawableModel.KA(i);
+			return drawableModel;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("th.d(").append(')').toString());
@@ -419,13 +419,13 @@ public class ItemDefinitions {
 				bool_37_ = true;
 				i_36_ |= 0x7;
 			}
-			Class387 class387 = class_ra.method5037(class64, i_36_, 64,
+			DrawableModel drawableModel = class_ra.method5037(class64, i_36_, 64,
 					(((ItemDefinitions) this).anInt5761 * 856370373 + 64),
 					768 + (((ItemDefinitions) this).anInt5762 * 1055603853));
-			if (!class387.method4743())
+			if (!drawableModel.method4743())
 				return null;
 			if (bool_37_)
-				class387.oa(-1773084507 * ((ItemDefinitions) this).anInt5758,
+				drawableModel.oa(-1773084507 * ((ItemDefinitions) this).anInt5758,
 						902366341 * ((ItemDefinitions) this).anInt5702,
 						((ItemDefinitions) this).anInt5739 * -230848851);
 			Class57 class57 = null;
@@ -482,7 +482,7 @@ public class ItemDefinitions {
 					.method2064(
 							(float) (252709809 * anInt5717 << 2),
 							(float) ((((Class220.anIntArray2483[330519029 * anInt5714 << 3]) * i_38_) >> 14)
-									- class387.YA() / 2 + (-1811316489
+									- drawableModel.YA() / 2 + (-1811316489
 									* anInt5718 << 2)),
 							(float) ((((Class220.anIntArray2474[330519029 * anInt5714 << 3]) * i_38_) >> 14) + (anInt5718
 									* -1811316489 << 2)));
@@ -491,7 +491,7 @@ public class ItemDefinitions {
 			class_ra.ba(2, 0);
 			class_ra.L();
 			class_ra.B(0, 0, 36, 32, 0, 0);
-			class387.method4739(class222_40_, null, 1);
+			drawableModel.method4739(class222_40_, null, 1);
 			class_ra.method5182(class233);
 			int[] is = class_ra.aq(0, 0, 36, 32);
 			if (i_28_ >= 1) {
@@ -1330,7 +1330,7 @@ public class ItemDefinitions {
 				Class373.aClass_ra4071.IA(1.0F);
 				Class373.aClass_ra4071.m(16777215, 0.5F, 0.5F, 20.0F, -50.0F,
 						30.0F);
-				Class387 class387 = Class373.aClass_ra4071.method5037(class64,
+				DrawableModel drawableModel = Class373.aClass_ra4071.method5037(class64,
 						2048, 64, 64, 768);
 				int i_93_ = 0;
 				while_107_: for (int i_94_ = 0; i_94_ < 500; i_94_++) {
@@ -1341,7 +1341,7 @@ public class ItemDefinitions {
 									.method2062(
 											(float) (int) (512.0F * ((float) i_96_ - (float) i_95_ / 2.0F)),
 											0.0F, (float) ((1 + i_95_) * 512));
-							class387.method4739(client.aClass222_8968, null, 0);
+							drawableModel.method4739(client.aClass222_8968, null, 0);
 							i_93_++;
 							if (Class122.method1319((byte) 1) - l >= (long) i_90_) {
 								if (i_91_ >= 1017103058)

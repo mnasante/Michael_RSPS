@@ -1920,11 +1920,11 @@ public class Class283 {
 		}
 	}
 
-	public static Class387 method2678(GraphicsToolkit class_ra, int i, int i_178_,
-			int i_179_, int i_180_, int i_181_, Class387 class387, int i_182_,
-			int i_183_, int i_184_, int i_185_, Class438 class438, int i_186_) {
+	public static DrawableModel method2678(GraphicsToolkit class_ra, int i, int i_178_,
+                                           int i_179_, int i_180_, int i_181_, DrawableModel drawableModel, int i_182_,
+                                           int i_183_, int i_184_, int i_185_, Class438 class438, int i_186_) {
 		try {
-			if (null == class387)
+			if (null == drawableModel)
 				return null;
 			int i_187_ = 2055;
 			if (null != class438) {
@@ -1932,15 +1932,15 @@ public class Class283 {
 				i_187_ &= ~0x200;
 			}
 			long l = (((long) i_183_ << 48) + ((long) ((i_185_ << 24) + ((i_184_ << 16) + i_181_)) + ((long) i_182_ << 32)));
-			Class387 class387_188_;
+			DrawableModel drawableModel_188_;
 			synchronized (Class462.aClass348_5682) {
-				class387_188_ = (Class387) Class462.aClass348_5682
+				drawableModel_188_ = (DrawableModel) Class462.aClass348_5682
 						.method4184(l);
 			}
-			if (class387_188_ == null
-					|| class_ra.method5017(class387_188_.m(), i_187_) != 0) {
-				if (class387_188_ != null)
-					i_187_ = class_ra.method5004(i_187_, class387_188_.m());
+			if (drawableModel_188_ == null
+					|| class_ra.method5017(drawableModel_188_.m(), i_187_) != 0) {
+				if (drawableModel_188_ != null)
+					i_187_ = class_ra.method5004(i_187_, drawableModel_188_.m());
 				int i_189_;
 				if (i_181_ == 1)
 					i_189_ = 9;
@@ -1998,37 +1998,37 @@ public class Class283 {
 						}
 					}
 				}
-				class387_188_ = class_ra.method5037(class64, i_187_,
+				drawableModel_188_ = class_ra.method5037(class64, i_187_,
 						161976139 * Class419.anInt5341, 64, 768);
 				synchronized (Class462.aClass348_5682) {
-					Class462.aClass348_5682.method4194(class387_188_, l);
+					Class462.aClass348_5682.method4194(drawableModel_188_, l);
 				}
 			}
-			int i_206_ = class387.RA();
-			int i_207_ = class387.ya();
-			int i_208_ = class387.AA();
-			int i_209_ = class387.ha();
+			int i_206_ = drawableModel.RA();
+			int i_207_ = drawableModel.ya();
+			int i_208_ = drawableModel.AA();
+			int i_209_ = drawableModel.ha();
 			if (class438 != null) {
-				class387_188_ = class387_188_
+				drawableModel_188_ = drawableModel_188_
 						.method4755((byte) 3, i_187_, true);
-				class387_188_.oa(i_207_ - i_206_ >> 1, 128,
+				drawableModel_188_.oa(i_207_ - i_206_ >> 1, 128,
 						i_209_ - i_208_ >> 1);
-				class387_188_.ia(i_206_ + i_207_ >> 1, 0, i_208_ + i_209_ >> 1);
-				class438.method5831(class387_188_, 574844997);
+				drawableModel_188_.ia(i_206_ + i_207_ >> 1, 0, i_208_ + i_209_ >> 1);
+				class438.method5831(drawableModel_188_, 574844997);
 			} else {
-				class387_188_ = class387_188_
+				drawableModel_188_ = drawableModel_188_
 						.method4755((byte) 3, i_187_, true);
-				class387_188_.oa(i_207_ - i_206_ >> 1, 128,
+				drawableModel_188_.oa(i_207_ - i_206_ >> 1, 128,
 						i_209_ - i_208_ >> 1);
-				class387_188_.ia(i_206_ + i_207_ >> 1, 0, i_209_ + i_208_ >> 1);
+				drawableModel_188_.ia(i_206_ + i_207_ >> 1, 0, i_209_ + i_208_ >> 1);
 			}
 			if (i_178_ != 0)
-				class387_188_.t(i_178_);
+				drawableModel_188_.t(i_178_);
 			if (0 != i_179_)
-				class387_188_.EA(i_179_);
+				drawableModel_188_.EA(i_179_);
 			if (i_180_ != 0)
-				class387_188_.ia(0, i_180_, 0);
-			return class387_188_;
+				drawableModel_188_.ia(0, i_180_, 0);
+			return drawableModel_188_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("lt.a(").append(')').toString());

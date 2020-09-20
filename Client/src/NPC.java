@@ -56,11 +56,11 @@ public class NPC extends Entity {
 			Class222 class222 = class_ra.method5178();
 			class222.method2070(method4347());
 			class222.method2064(0.0F, -5.0F, 0.0F);
-			method4445(class_ra, aClass387Array10082, class222,
+			method4445(class_ra, aDrawableModelArray10082, class222,
 					((NPC) this).aBoolean10128,
 					1604637699);
-			for (int i = 0; i < aClass387Array10082.length; i++)
-				aClass387Array10082[i] = null;
+			for (int i = 0; i < aDrawableModelArray10082.length; i++)
+				aDrawableModelArray10082[i] = null;
 		}
 	}
 
@@ -107,7 +107,7 @@ public class NPC extends Entity {
 						.method5826(-65534)) ? aClass438_10078 : null);
 				Class438 class438_5_ = ((aClass438_10077.method5819((byte) -63) && (!aBoolean10094 || class438 == null)) ? aClass438_10077
 						: null);
-				Class387 class387 = (Class283
+				DrawableModel drawableModel = (Class283
 						.method2678(
 								class_ra,
 								i_3_,
@@ -115,47 +115,47 @@ public class NPC extends Entity {
 								(-197572281 * ((NPC) this).anInt10073),
 								(-104151209 * ((NPC) this).anInt10074),
 								-2095128707 * aClass503_10190.anInt6187,
-								aClass387Array10082[0],
+								aDrawableModelArray10082[0],
 								aClass503_10190.aShort6191 & 0xffff,
 								aClass503_10190.aShort6153 & 0xffff,
 								aClass503_10190.aByte6168 & 0xff,
 								aClass503_10190.aByte6152 & 0xff,
 								null != class438_5_ ? class438_5_ : class438,
 								1812843484));
-				if (null != class387) {
+				if (null != drawableModel) {
 					if (null == aClass302_Sub1Array7726
-							|| (aClass302_Sub1Array7726.length < aClass387Array10082.length + 1))
-						method4362(aClass387Array10082.length + 1, 1538315389);
+							|| (aClass302_Sub1Array7726.length < aDrawableModelArray10082.length + 1))
+						method4362(aDrawableModelArray10082.length + 1, 1538315389);
 					class335 = Class73.method818(method4459(1869849139),
 							1879615126);
 					((NPC) this).aBoolean10129 = true;
 					class_ra.RA(false);
-					class387
+					drawableModel
 							.method4739(
 									class222_2_,
-									(aClass302_Sub1Array7726[aClass387Array10082.length]),
+									(aClass302_Sub1Array7726[aDrawableModelArray10082.length]),
 									0);
 					class_ra.RA(true);
 				}
 			}
 			if (null == aClass302_Sub1Array7726
-					|| aClass302_Sub1Array7726.length < aClass387Array10082.length)
-				method4362(aClass387Array10082.length, -241324715);
+					|| aClass302_Sub1Array7726.length < aDrawableModelArray10082.length)
+				method4362(aDrawableModelArray10082.length, -241324715);
 			if (null == class335)
 				class335 = Class73
 						.method818(method4459(1869849139), 1797748717);
-			method4445(class_ra, aClass387Array10082, class222_2_, false,
+			method4445(class_ra, aDrawableModelArray10082, class222_2_, false,
 					879327846);
-			for (int i_6_ = 0; i_6_ < aClass387Array10082.length; i_6_++) {
-				if (aClass387Array10082[i_6_] != null) {
+			for (int i_6_ = 0; i_6_ < aDrawableModelArray10082.length; i_6_++) {
+				if (aDrawableModelArray10082[i_6_] != null) {
 					if (aClass503_10190.aBoolean6193)
-						aClass387Array10082[i_6_]
+						aDrawableModelArray10082[i_6_]
 								.PA(
 										(((NPC) this).anInt10188 * 1611045847),
 										1427249763 * ((NPC) this).anInt10191,
 										(((NPC) this).anInt10192 * 376465581),
 										(((NPC) this).anInt10193 * 332650083));
-					aClass387Array10082[i_6_].method4739(class222_2_,
+					aDrawableModelArray10082[i_6_].method4739(class222_2_,
 							aClass302_Sub1Array7726[i_6_], 0);
 				}
 			}
@@ -164,11 +164,11 @@ public class NPC extends Entity {
 						.method4229();
 				class_ra.method5042(class69);
 			}
-			for (int i_7_ = 0; i_7_ < aClass387Array10082.length; i_7_++) {
-				if (null != aClass387Array10082[i_7_])
-					((NPC) this).aBoolean10129 |= aClass387Array10082[i_7_]
+			for (int i_7_ = 0; i_7_ < aDrawableModelArray10082.length; i_7_++) {
+				if (null != aDrawableModelArray10082[i_7_])
+					((NPC) this).aBoolean10129 |= aDrawableModelArray10082[i_7_]
 							.i();
-				aClass387Array10082[i_7_] = null;
+				aDrawableModelArray10082[i_7_] = null;
 			}
 			anInt10066 = client.anInt8777 * -815465993;
 			return class335;
@@ -197,38 +197,38 @@ public class NPC extends Entity {
 			if (bool)
 				i |= 0x80000;
 			int i_13_ = aClass386_10084.method4719((byte) 0);
-			Class387 class387 = (aClass387Array10082[0] = aClass503_10190
+			DrawableModel drawableModel = (aDrawableModelArray10082[0] = aClass503_10190
 					.method6236(class_ra, i, Class94.aClass349_913,
 							Class128.aClass148_6331, class438, class438_10_,
 							aClass438_Sub2_Sub1Array10112, anIntArray10085,
 							i_13_, aClass498_10181, method4432(-1491129226),
 							false, -679459424));
-			if (null == class387)
+			if (null == drawableModel)
 				return false;
-			((NPC) this).anInt10089 = class387.YA()
+			((NPC) this).anInt10089 = drawableModel.YA()
 					* -49760597;
-			class387.n();
-			method4423(class387, 839093609);
+			drawableModel.n();
+			method4423(drawableModel, 839093609);
 			if (0 != i_11_ || i_12_ != 0) {
 				method4425(i_13_, i_11_, i_12_,
 						-947990311 * class350.anInt3734,
 						1869548445 * class350.anInt3740, 1232740545);
 				if (0 != (((NPC) this).anInt10097 * -155466425))
-					aClass387Array10082[0]
+					aDrawableModelArray10082[0]
 							.t(((NPC) this).anInt10097
 									* -155466425);
 				if ((((NPC) this).anInt10073 * -197572281) != 0)
-					aClass387Array10082[0].EA(-197572281
+					aDrawableModelArray10082[0].EA(-197572281
 							* ((NPC) this).anInt10073);
 				if ((((NPC) this).anInt10074 * -104151209) != 0)
-					aClass387Array10082[0].ia(0,
+					aDrawableModelArray10082[0].ia(0,
 							((NPC) this).anInt10074
 									* -104151209, 0);
 			} else
 				method4425(i_13_, getSize() << 9,
 						getSize() << 9, 0, 0, 1757570363);
 			if (bool)
-				class387.PA(aByte10117, aByte10108, aByte10109,
+				drawableModel.PA(aByte10117, aByte10108, aByte10109,
 						aByte10130 & 0xff);
 			method4424(class_ra, class350, i_9_, i_11_, i_12_, i_13_, 614564932);
 			return true;
@@ -246,11 +246,11 @@ public class NPC extends Entity {
 				Class222 class222 = class_ra.method5178();
 				class222.method2070(method4347());
 				class222.method2064(0.0F, -5.0F, 0.0F);
-				method4445(class_ra, aClass387Array10082, class222,
+				method4445(class_ra, aDrawableModelArray10082, class222,
 						((NPC) this).aBoolean10128,
 						1317836884);
-				for (int i_14_ = 0; i_14_ < aClass387Array10082.length; i_14_++)
-					aClass387Array10082[i_14_] = null;
+				for (int i_14_ = 0; i_14_ < aDrawableModelArray10082.length; i_14_++)
+					aDrawableModelArray10082[i_14_] = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -474,8 +474,8 @@ public class NPC extends Entity {
 				return false;
 			Class222 class222 = method4347();
 			boolean bool = false;
-			for (int i_30_ = 0; i_30_ < aClass387Array10082.length; i_30_++) {
-				if (null != aClass387Array10082[i_30_]) {
+			for (int i_30_ = 0; i_30_ < aDrawableModelArray10082.length; i_30_++) {
+				if (null != aDrawableModelArray10082[i_30_]) {
 					boolean bool_31_;
 					while_55_: do {
 						do {
@@ -494,7 +494,7 @@ public class NPC extends Entity {
 						bool_31_ = false;
 					} while (false);
 					boolean bool_32_ = bool_31_;
-					boolean bool_33_ = (aClass387Array10082[i_30_].method4787(
+					boolean bool_33_ = (aDrawableModelArray10082[i_30_].method4787(
 							i, i_28_, class222, bool_32_,
 							aClass503_10190.anInt6192 * -226722581));
 					if (bool_33_) {
@@ -503,8 +503,8 @@ public class NPC extends Entity {
 					}
 				}
 			}
-			for (int i_34_ = 0; i_34_ < aClass387Array10082.length; i_34_++)
-				aClass387Array10082[i_34_] = null;
+			for (int i_34_ = 0; i_34_ < aDrawableModelArray10082.length; i_34_++)
+				aDrawableModelArray10082[i_34_] = null;
 			return bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -623,7 +623,7 @@ public class NPC extends Entity {
 					.method5826(-65534)) ? aClass438_10078 : null);
 			Class438 class438_43_ = ((aClass438_10077.method5819((byte) -86) && (!aBoolean10094 || class438 == null)) ? aClass438_10077
 					: null);
-			Class387 class387 = (Class283
+			DrawableModel drawableModel = (Class283
 					.method2678(
 							class_ra,
 							i,
@@ -631,44 +631,44 @@ public class NPC extends Entity {
 							(-197572281 * ((NPC) this).anInt10073),
 							(-104151209 * ((NPC) this).anInt10074),
 							-2095128707 * aClass503_10190.anInt6187,
-							aClass387Array10082[0],
+							aDrawableModelArray10082[0],
 							aClass503_10190.aShort6191 & 0xffff,
 							aClass503_10190.aShort6153 & 0xffff,
 							aClass503_10190.aByte6168 & 0xff,
 							aClass503_10190.aByte6152 & 0xff,
 							null != class438_43_ ? class438_43_ : class438,
 							1812843484));
-			if (null != class387) {
+			if (null != drawableModel) {
 				if (null == aClass302_Sub1Array7726
-						|| (aClass302_Sub1Array7726.length < aClass387Array10082.length + 1))
-					method4362(aClass387Array10082.length + 1, -565315916);
+						|| (aClass302_Sub1Array7726.length < aDrawableModelArray10082.length + 1))
+					method4362(aDrawableModelArray10082.length + 1, -565315916);
 				class335 = Class73
 						.method818(method4459(1869849139), 1346320693);
 				((NPC) this).aBoolean10129 = true;
 				class_ra.RA(false);
-				class387.method4739(class222_41_,
-						(aClass302_Sub1Array7726[aClass387Array10082.length]),
+				drawableModel.method4739(class222_41_,
+						(aClass302_Sub1Array7726[aDrawableModelArray10082.length]),
 						0);
 				class_ra.RA(true);
 			}
 		}
 		if (null == aClass302_Sub1Array7726
-				|| aClass302_Sub1Array7726.length < aClass387Array10082.length)
-			method4362(aClass387Array10082.length, -1743332566);
+				|| aClass302_Sub1Array7726.length < aDrawableModelArray10082.length)
+			method4362(aDrawableModelArray10082.length, -1743332566);
 		if (null == class335)
 			class335 = Class73.method818(method4459(1869849139), 1675644085);
-		method4445(class_ra, aClass387Array10082, class222_41_, false,
+		method4445(class_ra, aDrawableModelArray10082, class222_41_, false,
 				969483486);
-		for (int i_44_ = 0; i_44_ < aClass387Array10082.length; i_44_++) {
-			if (aClass387Array10082[i_44_] != null) {
+		for (int i_44_ = 0; i_44_ < aDrawableModelArray10082.length; i_44_++) {
+			if (aDrawableModelArray10082[i_44_] != null) {
 				if (aClass503_10190.aBoolean6193)
-					aClass387Array10082[i_44_]
+					aDrawableModelArray10082[i_44_]
 							.PA(
 									(((NPC) this).anInt10188 * 1611045847),
 									(1427249763 * ((NPC) this).anInt10191),
 									(((NPC) this).anInt10192 * 376465581),
 									(((NPC) this).anInt10193 * 332650083));
-				aClass387Array10082[i_44_].method4739(class222_41_,
+				aDrawableModelArray10082[i_44_].method4739(class222_41_,
 						(aClass302_Sub1Array7726[i_44_]), 0);
 			}
 		}
@@ -677,11 +677,11 @@ public class NPC extends Entity {
 					.method4229();
 			class_ra.method5042(class69);
 		}
-		for (int i_45_ = 0; i_45_ < aClass387Array10082.length; i_45_++) {
-			if (null != aClass387Array10082[i_45_])
-				((NPC) this).aBoolean10129 |= aClass387Array10082[i_45_]
+		for (int i_45_ = 0; i_45_ < aDrawableModelArray10082.length; i_45_++) {
+			if (null != aDrawableModelArray10082[i_45_])
+				((NPC) this).aBoolean10129 |= aDrawableModelArray10082[i_45_]
 						.i();
-			aClass387Array10082[i_45_] = null;
+			aDrawableModelArray10082[i_45_] = null;
 		}
 		anInt10066 = client.anInt8777 * -815465993;
 		return class335;
@@ -694,11 +694,11 @@ public class NPC extends Entity {
 			Class222 class222 = class_ra.method5178();
 			class222.method2070(method4347());
 			class222.method2064(0.0F, -5.0F, 0.0F);
-			method4445(class_ra, aClass387Array10082, class222,
+			method4445(class_ra, aDrawableModelArray10082, class222,
 					((NPC) this).aBoolean10128,
 					-935143388);
-			for (int i = 0; i < aClass387Array10082.length; i++)
-				aClass387Array10082[i] = null;
+			for (int i = 0; i < aDrawableModelArray10082.length; i++)
+				aDrawableModelArray10082[i] = null;
 		}
 	}
 
@@ -712,8 +712,8 @@ public class NPC extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_47_ = 0; i_47_ < aClass387Array10082.length; i_47_++) {
-			if (null != aClass387Array10082[i_47_]) {
+		for (int i_47_ = 0; i_47_ < aDrawableModelArray10082.length; i_47_++) {
+			if (null != aDrawableModelArray10082[i_47_]) {
 				boolean bool_48_;
 				while_56_: do {
 					do {
@@ -731,7 +731,7 @@ public class NPC extends Entity {
 					bool_48_ = false;
 				} while (false);
 				boolean bool_49_ = bool_48_;
-				boolean bool_50_ = aClass387Array10082[i_47_].method4787(i,
+				boolean bool_50_ = aDrawableModelArray10082[i_47_].method4787(i,
 						i_46_, class222, bool_49_,
 						((aClass503_10190.anInt6192) * -226722581));
 				if (bool_50_) {
@@ -740,8 +740,8 @@ public class NPC extends Entity {
 				}
 			}
 		}
-		for (int i_51_ = 0; i_51_ < aClass387Array10082.length; i_51_++)
-			aClass387Array10082[i_51_] = null;
+		for (int i_51_ = 0; i_51_ < aDrawableModelArray10082.length; i_51_++)
+			aDrawableModelArray10082[i_51_] = null;
 		return bool;
 	}
 
@@ -751,8 +751,8 @@ public class NPC extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_53_ = 0; i_53_ < aClass387Array10082.length; i_53_++) {
-			if (null != aClass387Array10082[i_53_]) {
+		for (int i_53_ = 0; i_53_ < aDrawableModelArray10082.length; i_53_++) {
+			if (null != aDrawableModelArray10082[i_53_]) {
 				boolean bool_54_;
 				while_57_: do {
 					do {
@@ -770,7 +770,7 @@ public class NPC extends Entity {
 					bool_54_ = false;
 				} while (false);
 				boolean bool_55_ = bool_54_;
-				boolean bool_56_ = aClass387Array10082[i_53_].method4787(i,
+				boolean bool_56_ = aDrawableModelArray10082[i_53_].method4787(i,
 						i_52_, class222, bool_55_,
 						((aClass503_10190.anInt6192) * -226722581));
 				if (bool_56_) {
@@ -779,8 +779,8 @@ public class NPC extends Entity {
 				}
 			}
 		}
-		for (int i_57_ = 0; i_57_ < aClass387Array10082.length; i_57_++)
-			aClass387Array10082[i_57_] = null;
+		for (int i_57_ = 0; i_57_ < aDrawableModelArray10082.length; i_57_++)
+			aDrawableModelArray10082[i_57_] = null;
 		return bool;
 	}
 
@@ -987,8 +987,8 @@ public class NPC extends Entity {
 			return false;
 		Class222 class222 = method4347();
 		boolean bool = false;
-		for (int i_66_ = 0; i_66_ < aClass387Array10082.length; i_66_++) {
-			if (null != aClass387Array10082[i_66_]) {
+		for (int i_66_ = 0; i_66_ < aDrawableModelArray10082.length; i_66_++) {
+			if (null != aDrawableModelArray10082[i_66_]) {
 				boolean bool_67_;
 				while_58_: do {
 					do {
@@ -1006,7 +1006,7 @@ public class NPC extends Entity {
 					bool_67_ = false;
 				} while (false);
 				boolean bool_68_ = bool_67_;
-				boolean bool_69_ = aClass387Array10082[i_66_].method4787(i,
+				boolean bool_69_ = aDrawableModelArray10082[i_66_].method4787(i,
 						i_65_, class222, bool_68_,
 						((aClass503_10190.anInt6192) * -226722581));
 				if (bool_69_) {
@@ -1015,8 +1015,8 @@ public class NPC extends Entity {
 				}
 			}
 		}
-		for (int i_70_ = 0; i_70_ < aClass387Array10082.length; i_70_++)
-			aClass387Array10082[i_70_] = null;
+		for (int i_70_ = 0; i_70_ < aDrawableModelArray10082.length; i_70_++)
+			aDrawableModelArray10082[i_70_] = null;
 		return bool;
 	}
 }

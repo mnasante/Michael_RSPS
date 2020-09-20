@@ -442,10 +442,10 @@ public class ObjectDefinitions {
 		}
 	}
 
-	public final synchronized Class387 method5774(GraphicsToolkit class_ra, int i,
-			int i_35_, int i_36_, Class_xa class_xa, Class_xa class_xa_37_,
-			int i_38_, int i_39_, int i_40_, Class438 class438,
-			Class435 class435, byte i_41_) {
+	public final synchronized DrawableModel method5774(GraphicsToolkit class_ra, int i,
+													   int i_35_, int i_36_, Class_xa class_xa, Class_xa class_xa_37_,
+													   int i_38_, int i_39_, int i_40_, Class438 class438,
+													   Class435 class435, byte i_41_) {
 		try {
 			if (Class355.method4261(i_35_, 1883717056))
 				i_35_ = Class424.aClass424_6596.anInt6613 * -1976050083;
@@ -470,43 +470,43 @@ public class ObjectDefinitions {
 			if (Class424.aClass424_6611.anInt6613 * -1976050083 == i_35_
 					&& i_36_ > 3)
 				i |= 0x5;
-			Class387 class387;
+			DrawableModel drawableModel;
 			synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5451) {
-				class387 = (Class387) ((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5451
+				drawableModel = (DrawableModel) ((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5451
 						.method4184(l);
 			}
-			if (class387 == null || class_ra.method5017(class387.m(), i) != 0) {
-				if (class387 != null)
-					i = class_ra.method5004(i, class387.m());
-				class387 = method5775(class_ra, i, i_35_, i_36_, class435,
+			if (drawableModel == null || class_ra.method5017(drawableModel.m(), i) != 0) {
+				if (drawableModel != null)
+					i = class_ra.method5004(i, drawableModel.m());
+				drawableModel = prepareModel(class_ra, i, i_35_, i_36_, class435,
 						1981902641);
-				if (null == class387)
+				if (null == drawableModel)
 					return null;
 				synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5451) {
 					((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5451
-							.method4194(class387, l);
+							.method4194(drawableModel, l);
 				}
 			}
 			boolean bool = false;
 			if (class438 != null) {
-				class387 = class387.method4755((byte) 1, i, true);
+				drawableModel = drawableModel.method4755((byte) 1, i, true);
 				bool = true;
-				class438.method5839(class387, i_36_ & 0x3, 1865606525);
+				class438.method5839(drawableModel, i_36_ & 0x3, 1865606525);
 			}
 			if (i_35_ == -1976050083 * Class424.aClass424_6611.anInt6613
 					&& i_36_ > 3) {
 				if (!bool) {
-					class387 = class387.method4755((byte) 3, i, true);
+					drawableModel = drawableModel.method4755((byte) 3, i, true);
 					bool = true;
 				}
-				class387.f(2048);
+				drawableModel.f(2048);
 			}
 			if (((ObjectDefinitions) this).aByte5363 != 0) {
 				if (!bool) {
-					class387 = class387.method4755((byte) 3, i, true);
+					drawableModel = drawableModel.method4755((byte) 3, i, true);
 					bool = true;
 				}
-				class387.pa(((ObjectDefinitions) this).aByte5363,
+				drawableModel.pa(((ObjectDefinitions) this).aByte5363,
 						1762198123 * ((ObjectDefinitions) this).anInt5384, class_xa,
 						class_xa_37_, i_38_, i_39_, i_40_);
 			}
@@ -514,24 +514,24 @@ public class ObjectDefinitions {
 					|| 0 != ((ObjectDefinitions) this).anInt5413 * 52797131
 					|| 0 != 1782732613 * ((ObjectDefinitions) this).anInt5419) {
 				if (!bool) {
-					class387 = class387.method4755((byte) 3, i, true);
+					drawableModel = drawableModel.method4755((byte) 3, i, true);
 					bool = true;
 				}
-				class387.ia(945504799 * ((ObjectDefinitions) this).anInt5412,
+				drawableModel.ia(945504799 * ((ObjectDefinitions) this).anInt5412,
 						((ObjectDefinitions) this).anInt5413 * 52797131,
 						1782732613 * ((ObjectDefinitions) this).anInt5419);
 			}
 			if (bool)
-				class387.KA(i_42_);
-			return class387;
+				drawableModel.KA(i_42_);
+			return drawableModel;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("rw.d(").append(')').toString());
 		}
 	}
 
-	Class387 method5775(GraphicsToolkit class_ra, int i, int i_43_, int i_44_,
-			Class435 class435, int i_45_) {
+	DrawableModel prepareModel(GraphicsToolkit class_ra, int i, int i_43_, int i_44_,
+							 Class435 class435, int i_45_) {
 		try {
 			int i_46_ = ((ObjectDefinitions) this).anInt5392 * -1536403851 + 64;
 			int i_47_ = -2019557395 * ((ObjectDefinitions) this).anInt5393 + 850;
@@ -558,7 +558,7 @@ public class ObjectDefinitions {
 				i |= 0x8000;
 			if (((ObjectDefinitions) this).aByte5377 != 0)
 				i |= 0x80000;
-			Class387 class387 = null;
+			DrawableModel drawableModel = null;
 			if (null != aByteArray5430) {
 				int i_49_ = -1;
 				for (int i_50_ = 0; i_50_ < aByteArray5430.length; i_50_++) {
@@ -577,20 +577,20 @@ public class ObjectDefinitions {
 					for (int i_52_ = 0; i_52_ < i_51_; i_52_++)
 						l = (long) is[i_52_] + 67783L * l;
 					synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5450) {
-						class387 = ((Class387) ((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5450
+						drawableModel = ((DrawableModel) ((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5450
 								.method4184(l));
 					}
-					if (null != class387) {
-						if (i_46_ != class387.c())
+					if (null != drawableModel) {
+						if (i_46_ != drawableModel.c())
 							i |= 0x1000;
-						if (i_47_ != class387.Z())
+						if (i_47_ != drawableModel.Z())
 							i |= 0x2000;
 					}
-					if (null == class387
-							|| class_ra.method5017(class387.m(), i) != 0) {
+					if (null == drawableModel
+							|| class_ra.method5017(drawableModel.m(), i) != 0) {
 						int i_53_ = i | 0x1f01f;
-						if (class387 != null)
-							i_53_ = class_ra.method5004(i_53_, class387.m());
+						if (drawableModel != null)
+							i_53_ = class_ra.method5004(i_53_, drawableModel.m());
 						Class64 class64 = null;
 						synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass64Array5443) {
 							for (int i_54_ = 0; i_54_ < i_51_; i_54_++) {
@@ -601,8 +601,8 @@ public class ObjectDefinitions {
 													is[i_54_], 0));
 								}
 								if (null == class64) {
-									Class387 class387_55_ = null;
-									return class387_55_;
+									DrawableModel drawableModel_55_ = null;
+									return drawableModel_55_;
 								}
 								if (class64.anInt630 < 13)
 									class64.method755(2);
@@ -614,7 +614,7 @@ public class ObjectDefinitions {
 										(((Class433) (((ObjectDefinitions) this).aClass433_5403)).aClass64Array5443),
 										i_51_);
 						}
-						class387 = class_ra
+						drawableModel = class_ra
 								.method5037(
 										class64,
 										i_53_,
@@ -622,32 +622,32 @@ public class ObjectDefinitions {
 												* -914670477, i_46_, i_47_);
 						synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5450) {
 							((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5450
-									.method4194(class387, l);
+									.method4194(drawableModel, l);
 						}
 					}
 				}
 			}
-			if (null == class387)
+			if (null == drawableModel)
 				return null;
-			Class387 class387_56_ = class387.method4755((byte) 0, i, true);
-			if (i_46_ != class387.c())
-				class387_56_.p(i_46_);
-			if (i_47_ != class387.Z())
-				class387_56_.Q(i_47_);
+			DrawableModel drawableModel_56_ = drawableModel.method4755((byte) 0, i, true);
+			if (i_46_ != drawableModel.c())
+				drawableModel_56_.p(i_46_);
+			if (i_47_ != drawableModel.Z())
+				drawableModel_56_.Q(i_47_);
 			if (bool)
-				class387_56_.wa();
+				drawableModel_56_.wa();
 			if (i_43_ == Class424.aClass424_6596.anInt6613 * -1976050083
 					&& i_44_ > 3) {
-				class387_56_.S(2048);
-				class387_56_.ia(180, 0, -180);
+				drawableModel_56_.S(2048);
+				drawableModel_56_.ia(180, 0, -180);
 			}
 			i_44_ &= 0x3;
 			if (1 == i_44_)
-				class387_56_.S(4096);
+				drawableModel_56_.S(4096);
 			else if (2 == i_44_)
-				class387_56_.S(8192);
+				drawableModel_56_.S(8192);
 			else if (i_44_ == 3)
-				class387_56_.S(12288);
+				drawableModel_56_.S(12288);
 			if (null != ((ObjectDefinitions) this).aShortArray5369) {
 				short[] is;
 				if (class435 != null
@@ -658,12 +658,12 @@ public class ObjectDefinitions {
 				for (int i_57_ = 0; i_57_ < ((ObjectDefinitions) this).aShortArray5369.length; i_57_++) {
 					if (((ObjectDefinitions) this).aByteArray5371 != null
 							&& i_57_ < ((ObjectDefinitions) this).aByteArray5371.length)
-						class387_56_
+						drawableModel_56_
 								.X(
 										(((ObjectDefinitions) this).aShortArray5369[i_57_]),
 										aShortArray5423[(((ObjectDefinitions) this).aByteArray5371[i_57_]) & 0xff]);
 					else
-						class387_56_.X(
+						drawableModel_56_.X(
 								(((ObjectDefinitions) this).aShortArray5369[i_57_]),
 								is[i_57_]);
 				}
@@ -676,28 +676,28 @@ public class ObjectDefinitions {
 				else
 					is = aShortArray5373;
 				for (int i_58_ = 0; i_58_ < ((ObjectDefinitions) this).aShortArray5372.length; i_58_++)
-					class387_56_.W(((ObjectDefinitions) this).aShortArray5372[i_58_],
+					drawableModel_56_.W(((ObjectDefinitions) this).aShortArray5372[i_58_],
 							is[i_58_]);
 			}
 			if (0 != ((ObjectDefinitions) this).aByte5377)
-				class387_56_.PA(((ObjectDefinitions) this).aByte5417,
+				drawableModel_56_.PA(((ObjectDefinitions) this).aByte5417,
 						((ObjectDefinitions) this).aByte5375,
 						((ObjectDefinitions) this).aByte5415,
 						((ObjectDefinitions) this).aByte5377 & 0xff);
 			if (-166422633 * ((ObjectDefinitions) this).anInt5406 != 128
 					|| 668312333 * ((ObjectDefinitions) this).anInt5407 != 128
 					|| 128 != -895192829 * ((ObjectDefinitions) this).anInt5414)
-				class387_56_.oa(((ObjectDefinitions) this).anInt5406 * -166422633,
+				drawableModel_56_.oa(((ObjectDefinitions) this).anInt5406 * -166422633,
 						((ObjectDefinitions) this).anInt5407 * 668312333,
 						((ObjectDefinitions) this).anInt5414 * -895192829);
 			if (0 != ((ObjectDefinitions) this).anInt5379 * -1514641891
 					|| 0 != 1536191987 * ((ObjectDefinitions) this).anInt5396
 					|| 0 != ((ObjectDefinitions) this).anInt5411 * 2145431327)
-				class387_56_.ia(-1514641891 * ((ObjectDefinitions) this).anInt5379,
+				drawableModel_56_.ia(-1514641891 * ((ObjectDefinitions) this).anInt5379,
 						((ObjectDefinitions) this).anInt5396 * 1536191987,
 						((ObjectDefinitions) this).anInt5411 * 2145431327);
-			class387_56_.KA(i_48_);
-			return class387_56_;
+			drawableModel_56_.KA(i_48_);
+			return drawableModel_56_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("rw.u(").append(')').toString());
@@ -945,31 +945,31 @@ public class ObjectDefinitions {
 				class454 = (Class454) ((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5452
 						.method4184(l);
 			}
-			Class387 class387 = (Class387) (class454 != null ? class454.anObject5645
+			DrawableModel drawableModel = (DrawableModel) (class454 != null ? class454.anObject5645
 					: null);
 			Class_na class_na = null;
 			do {
-				if (class387 == null
-						|| class_ra.method5017(class387.m(), i_76_) != 0) {
-					if (null != class387)
-						i_76_ = class_ra.method5004(i_76_, class387.m());
+				if (drawableModel == null
+						|| class_ra.method5017(drawableModel.m(), i_76_) != 0) {
+					if (null != drawableModel)
+						i_76_ = class_ra.method5004(i_76_, drawableModel.m());
 					int i_77_ = i_76_;
 					if ((i_69_ == Class424.aClass424_6611.anInt6613
 							* -1976050083)
 							&& i_70_ > 3)
 						i_77_ |= 0x5;
-					class387 = method5775(class_ra, i_77_, i_69_, i_70_,
+					drawableModel = prepareModel(class_ra, i_77_, i_69_, i_70_,
 							class435, 1553510063);
-					if (class387 == null)
+					if (drawableModel == null)
 						return null;
 					if ((i_69_ == Class424.aClass424_6611.anInt6613
 							* -1976050083)
 							&& i_70_ > 3)
-						class387.f(2048);
+						drawableModel.f(2048);
 					if (bool)
-						class_na = class387.ga(null);
-					class387.KA(i_76_);
-					class454 = new Class454(class387, class_na);
+						class_na = drawableModel.ga(null);
+					drawableModel.KA(i_76_);
+					class454 = new Class454(drawableModel, class_na);
 					synchronized (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5452) {
 						((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass348_5452
 								.method4194(class454, l);
@@ -978,26 +978,26 @@ public class ObjectDefinitions {
 				}
 				class_na = (Class_na) class454.anObject5646;
 				if (bool && class_na == null)
-					class_na = (Class_na) (class454.anObject5646 = class387
+					class_na = (Class_na) (class454.anObject5646 = drawableModel
 							.ga(null));
 			} while (false);
 			boolean bool_78_ = (((ObjectDefinitions) this).aByte5363 != 0 && (null != class_xa || class_xa_71_ != null));
 			boolean bool_79_ = (((ObjectDefinitions) this).anInt5412 * 945504799 != 0
 					|| ((ObjectDefinitions) this).anInt5413 * 52797131 != 0 || 0 != ((ObjectDefinitions) this).anInt5419 * 1782732613);
 			if (bool_78_ || bool_79_) {
-				class387 = class387.method4755((byte) 0, i_76_, true);
+				drawableModel = drawableModel.method4755((byte) 0, i_76_, true);
 				if (bool_78_)
-					class387.pa(((ObjectDefinitions) this).aByte5363,
+					drawableModel.pa(((ObjectDefinitions) this).aByte5363,
 							1762198123 * ((ObjectDefinitions) this).anInt5384, class_xa,
 							class_xa_71_, i_72_, i_73_, i_74_);
 				if (bool_79_)
-					class387.ia(((ObjectDefinitions) this).anInt5412 * 945504799,
+					drawableModel.ia(((ObjectDefinitions) this).anInt5412 * 945504799,
 							52797131 * ((ObjectDefinitions) this).anInt5413,
 							((ObjectDefinitions) this).anInt5419 * 1782732613);
-				class387.KA(i);
+				drawableModel.KA(i);
 			} else
-				class387 = class387.method4755((byte) 0, i, true);
-			((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass454_5456.anObject5645 = class387;
+				drawableModel = drawableModel.method4755((byte) 0, i, true);
+			((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass454_5456.anObject5645 = drawableModel;
 			((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass454_5456.anObject5646 = class_na;
 			return (((Class433) ((ObjectDefinitions) this).aClass433_5403).aClass454_5456);
 		} catch (RuntimeException runtimeexception) {

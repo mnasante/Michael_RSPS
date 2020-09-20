@@ -132,7 +132,7 @@ public class Class299 {
 		}
 	}
 
-	Class387 method3679(GraphicsToolkit class_ra, int i) {
+	DrawableModel method3679(GraphicsToolkit class_ra, int i) {
 		try {
 			Class64 class64 = Class64.method751(Class341.aClass243_3646,
 					-1002982425 * ((Class299) this).anInt3195, 0);

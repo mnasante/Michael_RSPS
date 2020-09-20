@@ -62,14 +62,14 @@ public class Class400 {
 		}
 	}
 
-	public static final void method4929(Class387 class387, Class438 class438,
-			Class438 class438_2_, int i) {
+	public static final void method4929(DrawableModel drawableModel, Class438 class438,
+                                        Class438 class438_2_, int i) {
 		try {
 			if (class438.method5838((short) 225)
 					&& class438_2_.method5838((short) 225)) {
 				Class391 class391 = ((Class438) class438).aClass391_5524;
 				Class391 class391_3_ = ((Class438) class438_2_).aClass391_5524;
-				class387
+				drawableModel
 						.method4736(
 								(((Class441) ((Class438) class438).aClass441_5534).aClass298_Sub37_Sub4_5583),
 								(((Class441) ((Class438) class438).aClass441_5534).anInt5584) * 806878007,

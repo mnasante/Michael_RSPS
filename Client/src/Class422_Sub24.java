@@ -672,7 +672,7 @@ public class Class422_Sub24 extends Class422 {
 									client.aClass283_8716
 											.method2640((byte) -16).method4326(
 													(byte) -24);
-									Class387 class387 = null;
+									DrawableModel drawableModel = null;
 									int i_35_ = 2048;
 									if (class105.anInt1197 * 1054312299 != 0)
 										i_35_ |= 0x80000;
@@ -686,7 +686,7 @@ public class Class422_Sub24 extends Class422 {
 													.method6030(
 															(class105.anInt1281 * -66163287),
 															1491142573));
-											class387 = (class468
+											drawableModel = (class468
 													.method6029(
 															Class373.aClass_ra4071,
 															i_35_,
@@ -696,8 +696,8 @@ public class Class422_Sub24 extends Class422 {
 															class105.aClass438_1152,
 															0, 0, 0, 0,
 															1717387975));
-											if (class387 != null)
-												i_36_ = -class387.YA() >> 1;
+											if (drawableModel != null)
+												i_36_ = -drawableModel.YA() >> 1;
 											else
 												Tradution.method6054(class105,
 														-1878363651);
@@ -711,7 +711,7 @@ public class Class422_Sub24 extends Class422 {
 															.method6379(
 																	(class365_sub1_sub1_sub2_sub2.aString10195),
 																	(byte) 125)) == (1148770405 * (class105.anInt1140))))) {
-												class387 = (class105
+												drawableModel = (class105
 														.method1124(
 																Class373.aClass_ra4071,
 																i_35_,
@@ -724,7 +724,7 @@ public class Class422_Sub24 extends Class422 {
 																(class105.aClass438_1152),
 																(class365_sub1_sub1_sub2_sub2.aClass366_10209),
 																-297118329));
-												if (null == class387
+												if (null == drawableModel
 														&& IComponentDefinition.aBoolean1139)
 													Tradution
 															.method6054(
@@ -741,7 +741,7 @@ public class Class422_Sub24 extends Class422 {
 															.method6379(
 																	(class365_sub1_sub1_sub2_sub2.aString10195),
 																	(byte) 127)) == (class105.anInt1140 * 1148770405))))
-												class387 = (class365_sub1_sub1_sub2_sub2.aClass366_10209
+												drawableModel = (class365_sub1_sub1_sub2_sub2.aClass366_10209
 														.method4545(
 																Class373.aClass_ra4071,
 																i_35_,
@@ -767,7 +767,7 @@ public class Class422_Sub24 extends Class422 {
 														572201537 * class105.anInt1151,
 														false, 2023314319));
 										if (null != class298_sub9)
-											class387 = (class298_sub9
+											drawableModel = (class298_sub9
 													.method2891(
 															Class373.aClass_ra4071,
 															i_35_,
@@ -780,7 +780,7 @@ public class Class422_Sub24 extends Class422 {
 									} else if (null == class105.aClass438_1152
 											|| !(class105.aClass438_1152
 													.method5819((byte) -99))) {
-										class387 = (class105
+										drawableModel = (class105
 												.method1124(
 														Class373.aClass_ra4071,
 														i_35_,
@@ -793,12 +793,12 @@ public class Class422_Sub24 extends Class422 {
 														null,
 														(Class287.myPlayer.aClass366_10209),
 														-347094263));
-										if (null == class387
+										if (null == drawableModel
 												&& IComponentDefinition.aBoolean1139)
 											Tradution.method6054(class105,
 													-91896348);
 									} else {
-										class387 = (class105
+										drawableModel = (class105
 												.method1124(
 														Class373.aClass_ra4071,
 														i_35_,
@@ -811,14 +811,14 @@ public class Class422_Sub24 extends Class422 {
 														class105.aClass438_1152,
 														(Class287.myPlayer.aClass366_10209),
 														-1902556053));
-										if (null == class387
+										if (null == drawableModel
 												&& IComponentDefinition.aBoolean1139)
 											Tradution.method6054(class105,
 													302421220);
 									}
-									if (null != class387) {
+									if (null != drawableModel) {
 										if (1054312299 * class105.anInt1197 != 0)
-											class387
+											drawableModel
 													.PA(
 															(class105.anInt1278 * -2138135813),
 															(class105.anInt1207 * 118945837),
@@ -954,7 +954,7 @@ public class Class422_Sub24 extends Class422 {
 										}
 										class105.method1114(
 												Class373.aClass_ra4071,
-												class387,
+                                                drawableModel,
 												client.aClass222_8968,
 												443738891 * client.anInt8884,
 												1739448532);
@@ -966,7 +966,7 @@ public class Class422_Sub24 extends Class422 {
 															(i_12_ + (-2093041337 * class105.anInt1156)),
 															i_13_
 																	+ (class105.anInt1162 * 457937409));
-										class387.method4739(
+										drawableModel.method4739(
 												(client.aClass222_8968), null,
 												1);
 										if (!class105.aBoolean1199

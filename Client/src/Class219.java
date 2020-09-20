@@ -239,33 +239,33 @@ public class Class219 implements Runnable {
 		}
 	}
 
-	public static Class387 method2044(GraphicsToolkit class_ra, int i, int i_5_,
-			int i_6_, int i_7_, int i_8_, int i_9_) {
+	public static DrawableModel method2044(GraphicsToolkit class_ra, int i, int i_5_,
+                                           int i_6_, int i_7_, int i_8_, int i_9_) {
 		try {
 			long l = (long) i_8_;
-			Class387 class387 = (Class387) Class19.aClass348_264.method4184(l);
+			DrawableModel drawableModel = (DrawableModel) Class19.aClass348_264.method4184(l);
 			int i_10_ = 2055;
-			if (null == class387) {
+			if (null == drawableModel) {
 				Class64 class64 = Class64.method751(Class341.aClass243_3646,
 						i_8_, 0);
 				if (class64 == null)
 					return null;
 				if (class64.anInt630 < 13)
 					class64.method755(2);
-				class387 = class_ra.method5037(class64, i_10_, -203714349
+				drawableModel = class_ra.method5037(class64, i_10_, -203714349
 						* Class481.anInt6035, 64, 768);
-				Class19.aClass348_264.method4194(class387, l);
+				Class19.aClass348_264.method4194(drawableModel, l);
 			}
-			class387 = class387.method4755((byte) 6, i_10_, true);
+			drawableModel = drawableModel.method4755((byte) 6, i_10_, true);
 			if (i != 0)
-				class387.f(i);
+				drawableModel.f(i);
 			if (0 != i_5_)
-				class387.t(i_5_);
+				drawableModel.t(i_5_);
 			if (0 != i_6_)
-				class387.EA(i_6_);
+				drawableModel.EA(i_6_);
 			if (0 != i_7_)
-				class387.ia(0, i_7_, 0);
-			return class387;
+				drawableModel.ia(0, i_7_, 0);
+			return drawableModel;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("jf.a(").append(')').toString());

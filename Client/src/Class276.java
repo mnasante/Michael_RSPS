@@ -31,12 +31,12 @@ public class Class276 {
 	static int anInt2933 = 13;
 	static int anInt2934 = 16;
 	int anInt2935;
-	static Class387 aClass387_2936;
+	static DrawableModel aDrawableModel_2936;
 	static Class57 aClass57_2937;
 	static int[] anIntArray2938 = new int[4];
 
 	static void method2574() {
-		aClass387_2936 = null;
+		aDrawableModel_2936 = null;
 		aClass57_2937 = null;
 	}
 
@@ -46,7 +46,7 @@ public class Class276 {
 	}
 
 	static void method2576(GraphicsToolkit class_ra) {
-		if (aClass387_2936 == null) {
+		if (aDrawableModel_2936 == null) {
 			Class64 class64 = new Class64(580, 1104, 1);
 			class64.method757((short) 0, (short) 32767, (short) 0,
 					(short) 1024, (short) 1024, (short) 1024, (byte) 0,
@@ -87,7 +87,7 @@ public class Class276 {
 			class64.anIntArray631 = null;
 			class64.anIntArray619 = null;
 			class64.aByteArray633 = null;
-			aClass387_2936 = class_ra.method5037(class64, 51200, 33, 64, 768);
+			aDrawableModel_2936 = class_ra.method5037(class64, 51200, 33, 64, 768);
 		}
 	}
 
@@ -228,12 +228,12 @@ public class Class276 {
 			i_39_ = i_39_ * i_44_ - i * i_43_ >> 14;
 			i = i_45_;
 		}
-		Class387 class387 = aClass387_2936.method4755((byte) 0, 51200, true);
-		class387.W((short) 0, (short) ((Class276) this).anInt2918);
+		DrawableModel drawableModel = aDrawableModel_2936.method4755((byte) 0, 51200, true);
+		drawableModel.W((short) 0, (short) ((Class276) this).anInt2918);
 		class_ra.IA(1.0F);
 		class_ra.m(16777215, 1.0F, 1.0F, (float) i, (float) i_38_,
 				(float) i_39_);
-		int i_46_ = (1024 * ((Class276) this).anInt2923 / (class387.ya() - class387
+		int i_46_ = (1024 * ((Class276) this).anInt2923 / (drawableModel.ya() - drawableModel
 				.RA()));
 		if (((Class276) this).anInt2935 != 0)
 			i_46_ = i_46_ * 13 / 16;
@@ -247,8 +247,8 @@ public class Class276 {
 		class_ra.method5182(class233_47_);
 		class_ra.method5043(new Class222());
 		Class222 class222 = new Class222();
-		class222.method2062(0.0F, 0.0F, (float) (50 - class387.AA()));
-		class387.method4739(class222, null, 1);
+		class222.method2062(0.0F, 0.0F, (float) (50 - drawableModel.AA()));
+		drawableModel.method4739(class222, null, 1);
 		int i_48_ = ((Class276) this).anInt2923 * 13 / 16;
 		int i_49_ = (((Class276) this).anInt2923 - i_48_) / 2;
 		aClass57_2922.method634(i_49_, i_49_, i_48_, i_48_, 0, ~0xffffff
@@ -347,9 +347,9 @@ public class Class276 {
 			class64.method754(((Class276) this).anInt2926 & 0x3fff,
 					((Class276) this).anInt2917 & 0x3fff,
 					((Class276) this).anInt2915 & 0x3fff);
-			Class387 class387 = class_ra.method5037(class64, 2048, 0, 64, 768);
-			int i_71_ = class387.ya() - class387.RA();
-			int i_72_ = class387.o() - class387.YA();
+			DrawableModel drawableModel = class_ra.method5037(class64, 2048, 0, 64, 768);
+			int i_71_ = drawableModel.ya() - drawableModel.RA();
+			int i_72_ = drawableModel.o() - drawableModel.YA();
 			int i_73_ = i_71_ > i_72_ ? i_71_ : i_72_;
 			int i_74_ = 1024 * ((Class276) this).anInt2923 / i_73_;
 			Class233 class233 = class_ra.method5045();
@@ -364,8 +364,8 @@ public class Class276 {
 			Class222 class222 = new Class222();
 			class_ra.method5043(class222);
 			Class222 class222_76_ = class_ra.method5178();
-			class222_76_.method2062(0.0F, 0.0F, (float) (50 - class387.AA()));
-			class387.method4739(class222_76_, null, 1);
+			class222_76_.method2062(0.0F, 0.0F, (float) (50 - drawableModel.AA()));
+			drawableModel.method4739(class222_76_, null, 1);
 			((Class276) this).aClass57_2925 = class_ra.method5033(0, 0,
 					((Class276) this).anInt2923, ((Class276) this).anInt2923,
 					true);

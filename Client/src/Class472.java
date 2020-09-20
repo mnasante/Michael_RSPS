@@ -27,14 +27,14 @@ public class Class472 {
 		((Class472) this).anInt5964 = -2080773359 * i_3_;
 	}
 
-	static Class334 method6063(int i, int i_4_, int i_5_, Class387 class387,
+	static Class334 method6063(int i, int i_4_, int i_5_, DrawableModel drawableModel,
 			int i_6_) {
 		try {
-			if (null == class387)
+			if (null == drawableModel)
 				return null;
-			Class334 class334 = new Class334(i, i_4_, i_5_, class387.N(),
-					class387.RA(), class387.ya(), class387.YA(), class387.o(),
-					class387.AA(), class387.ha());
+			Class334 class334 = new Class334(i, i_4_, i_5_, drawableModel.N(),
+					drawableModel.RA(), drawableModel.ya(), drawableModel.YA(), drawableModel.o(),
+					drawableModel.AA(), drawableModel.ha());
 			return class334;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()

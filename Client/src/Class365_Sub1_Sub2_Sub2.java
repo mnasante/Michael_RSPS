@@ -5,7 +5,7 @@
 public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 		Interface3 {
 	boolean aBoolean9912;
-	Class387 aClass387_9913;
+	DrawableModel aDrawableModel_9913;
 	Class_na aClass_na9914;
 	int anInt9915;
 	boolean aBoolean9916;
@@ -32,14 +32,14 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4369() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 		return false;
 	}
 
 	public int method4361(int i) {
 		try {
-			return (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+			return (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 					.YA()
 					: 0);
 		} catch (RuntimeException runtimeexception) {
@@ -48,17 +48,17 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 		}
 	}
 
-	Class387 method4501(GraphicsToolkit class_ra, int i, byte i_0_) {
+	DrawableModel method4501(GraphicsToolkit class_ra, int i, byte i_0_) {
 		try {
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null
 					&& class_ra
 							.method5017(
-									((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+									((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 											.m(), i) == 0)
-				return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913;
+				return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913;
 			Class454 class454 = method4502(class_ra, i, false, -1886813239);
 			if (null != class454)
-				return (Class387) class454.anObject5645;
+				return (DrawableModel) class454.anObject5645;
 			return null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -97,8 +97,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4351() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 		return false;
 	}
 
@@ -117,10 +117,10 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 
 	boolean method4350(GraphicsToolkit class_ra, int i, int i_3_, byte i_4_) {
 		try {
-			Class387 class387 = method4501(class_ra, 131072, (byte) 22);
-			if (null != class387) {
+			DrawableModel drawableModel = method4501(class_ra, 131072, (byte) 22);
+			if (null != drawableModel) {
 				Class222 class222 = method4347();
-				return class387.method4787(i, i_3_, class222, false, 0);
+				return drawableModel.method4787(i, i_3_, class222, false, 0);
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -143,11 +143,11 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 		try {
 			if (class365_sub1 instanceof Class365_Sub1_Sub2_Sub2) {
 				Class365_Sub1_Sub2_Sub2 class365_sub1_sub2_sub2_8_ = (Class365_Sub1_Sub2_Sub2) class365_sub1;
-				if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null
-						&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_8_).aClass387_9913)
-					((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+				if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null
+						&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_8_).aDrawableModel_9913)
+					((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 							.method4745(
-									((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_8_).aClass387_9913,
+									((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_8_).aDrawableModel_9913,
 									i, i_5_, i_6_, bool);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -159,9 +159,9 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	void method4398(byte i) {
 		try {
 			((Class365_Sub1_Sub2_Sub2) this).aBoolean9912 = false;
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null)
-				((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
-						.KA(((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.m()
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null)
+				((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
+						.KA(((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.m()
 								& ~0x10000);
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -170,8 +170,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4382() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 		return false;
 	}
 
@@ -195,8 +195,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 
 	public void method31(byte i) {
 		try {
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null)
-				((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.method4784();
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null)
+				((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.method4784();
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("wo.p(").append(')').toString());
@@ -213,8 +213,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4383() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 		return false;
 	}
 
@@ -248,7 +248,7 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	public int method4380() {
-		return (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+		return (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 				.YA()
 				: 0);
 	}
@@ -266,8 +266,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	public void method34() {
-		if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null)
-			((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.method4784();
+		if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null)
+			((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.method4784();
 	}
 
 	public boolean method41() {
@@ -355,16 +355,16 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 		Class454 class454 = method4502(class_ra, i_15_,
 				((Class365_Sub1_Sub2_Sub2) this).aBoolean9921, -2037171144);
 		if (class454 != null) {
-			((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 = (Class387) class454.anObject5645;
+			((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 = (DrawableModel) class454.anObject5645;
 			((Class365_Sub1_Sub2_Sub2) this).aClass_na9914 = (Class_na) class454.anObject5646;
 			if (((Class365_Sub1_Sub2_Sub2) this).aBoolean9912
 					|| class432.aBoolean5441) {
-				((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 = ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+				((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 = ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 						.method4755((byte) 0, i_15_, false);
 				if (class432.aBoolean5441) {
 					Class287 class287 = client.aClass283_8716
 							.method2632(-1945230052);
-					((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.PA(
+					((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.PA(
 							1599271859 * class287.anInt3096,
 							class287.anInt3097 * 1630923113, -1560648831
 									* class287.anInt3098, -57569897
@@ -376,14 +376,14 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4365() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return !((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.u();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return !((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.u();
 		return true;
 	}
 
 	boolean method4374() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return !((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.u();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return !((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.u();
 		return true;
 	}
 
@@ -422,28 +422,28 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4372(GraphicsToolkit class_ra, int i, int i_16_) {
-		Class387 class387 = method4501(class_ra, 131072, (byte) 43);
-		if (null != class387) {
+		DrawableModel drawableModel = method4501(class_ra, 131072, (byte) 43);
+		if (null != drawableModel) {
 			Class222 class222 = method4347();
-			return class387.method4787(i, i_16_, class222, false, 0);
+			return drawableModel.method4787(i, i_16_, class222, false, 0);
 		}
 		return false;
 	}
 
 	boolean method4385(GraphicsToolkit class_ra, int i, int i_17_) {
-		Class387 class387 = method4501(class_ra, 131072, (byte) 125);
-		if (null != class387) {
+		DrawableModel drawableModel = method4501(class_ra, 131072, (byte) 125);
+		if (null != drawableModel) {
 			Class222 class222 = method4347();
-			return class387.method4787(i, i_17_, class222, false, 0);
+			return drawableModel.method4787(i, i_17_, class222, false, 0);
 		}
 		return false;
 	}
 
 	boolean method4352(GraphicsToolkit class_ra, int i, int i_18_) {
-		Class387 class387 = method4501(class_ra, 131072, (byte) 126);
-		if (null != class387) {
+		DrawableModel drawableModel = method4501(class_ra, 131072, (byte) 126);
+		if (null != drawableModel) {
 			Class222 class222 = method4347();
-			return class387.method4787(i, i_18_, class222, false, 0);
+			return drawableModel.method4787(i, i_18_, class222, false, 0);
 		}
 		return false;
 	}
@@ -452,44 +452,44 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 			int i_19_, int i_20_, boolean bool) {
 		if (class365_sub1 instanceof Class365_Sub1_Sub2_Sub2) {
 			Class365_Sub1_Sub2_Sub2 class365_sub1_sub2_sub2_21_ = (Class365_Sub1_Sub2_Sub2) class365_sub1;
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null
-					&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_21_).aClass387_9913)
-				((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null
+					&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_21_).aDrawableModel_9913)
+				((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 						.method4745(
-								(((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_21_).aClass387_9913),
+								(((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_21_).aDrawableModel_9913),
 								i, i_19_, i_20_, bool);
 		}
 	}
 
 	Class335 method4370(GraphicsToolkit class_ra) {
-		if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 == null)
+		if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 == null)
 			return null;
 		Class222 class222 = method4347();
 		Class335 class335 = Class73.method818(
 				((Class365_Sub1_Sub2_Sub2) this).aBoolean9919, 1241916364);
-		((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.method4739(class222,
+		((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.method4739(class222,
 				aClass302_Sub1Array7726[0], 0);
 		return class335;
 	}
 
 	void method4377() {
 		((Class365_Sub1_Sub2_Sub2) this).aBoolean9912 = false;
-		if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null)
-			((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
-					.KA(((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.m()
+		if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null)
+			((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
+					.KA(((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.m()
 							& ~0x10000);
 	}
 
 	void method4378() {
 		((Class365_Sub1_Sub2_Sub2) this).aBoolean9912 = false;
-		if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null)
-			((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
-					.KA(((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.m()
+		if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null)
+			((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
+					.KA(((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.m()
 							& ~0x10000);
 	}
 
 	public int method4379() {
-		return (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+		return (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 				.YA()
 				: 0);
 	}
@@ -514,20 +514,20 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	public int method4381() {
-		return (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+		return (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 ? ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 				.YA()
 				: 0);
 	}
 
 	Class335 method4394(GraphicsToolkit class_ra, int i) {
 		try {
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 == null)
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 == null)
 				return null;
 			Class222 class222 = method4347();
 			Class335 class335 = Class73
 					.method818((((Class365_Sub1_Sub2_Sub2) this).aBoolean9919),
 							2139686110);
-			((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.method4739(
+			((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.method4739(
 					class222, aClass302_Sub1Array7726[0], 0);
 			return class335;
 		} catch (RuntimeException runtimeexception) {
@@ -562,8 +562,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4349() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 		return false;
 	}
 
@@ -571,11 +571,11 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 			int i_22_, int i_23_, boolean bool) {
 		if (class365_sub1 instanceof Class365_Sub1_Sub2_Sub2) {
 			Class365_Sub1_Sub2_Sub2 class365_sub1_sub2_sub2_24_ = (Class365_Sub1_Sub2_Sub2) class365_sub1;
-			if (((Class365_Sub1_Sub2_Sub2) this).aClass387_9913 != null
-					&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_24_).aClass387_9913)
-				((Class365_Sub1_Sub2_Sub2) this).aClass387_9913
+			if (((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913 != null
+					&& null != ((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_24_).aDrawableModel_9913)
+				((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913
 						.method4745(
-								(((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_24_).aClass387_9913),
+								(((Class365_Sub1_Sub2_Sub2) class365_sub1_sub2_sub2_24_).aDrawableModel_9913),
 								i, i_22_, i_23_, bool);
 		}
 	}
@@ -590,8 +590,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 	}
 
 	boolean method4353() {
-		if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-			return !((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.u();
+		if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+			return !((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.u();
 		return true;
 	}
 
@@ -609,8 +609,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 
 	boolean method4376(short i) {
 		try {
-			if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-				return ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.i();
+			if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+				return ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.i();
 			return false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
@@ -620,8 +620,8 @@ public class Class365_Sub1_Sub2_Sub2 extends Class365_Sub1_Sub2 implements
 
 	boolean method4399(byte i) {
 		try {
-			if (null != ((Class365_Sub1_Sub2_Sub2) this).aClass387_9913)
-				return !((Class365_Sub1_Sub2_Sub2) this).aClass387_9913.u();
+			if (null != ((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913)
+				return !((Class365_Sub1_Sub2_Sub2) this).aDrawableModel_9913.u();
 			return true;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()

@@ -3,7 +3,7 @@
  */
 
 public class Class60 {
-	Class387 aClass387_584;
+	DrawableModel aDrawableModel_584;
 	Class433 aClass433_585;
 	int anInt586;
 	Class365_Sub1 aClass365_Sub1_587;
@@ -37,7 +37,7 @@ public class Class60 {
 	void method698(Class435 class435, int i) {
 		try {
 			((Class60) this).aClass435_597 = class435;
-			((Class60) this).aClass387_584 = null;
+			((Class60) this).aDrawableModel_584 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("ck.b(").append(')').toString());
@@ -53,8 +53,8 @@ public class Class60 {
 		}
 	}
 
-	final Class387 method700(GraphicsToolkit class_ra, int i, boolean bool,
-			boolean bool_1_, byte i_2_) {
+	final DrawableModel method700(GraphicsToolkit class_ra, int i, boolean bool,
+                                  boolean bool_1_, byte i_2_) {
 		try {
 			ObjectDefinitions class432 = (((Class60) this).aClass433_585.getObjectDefinitions(
 					1686561661 * ((Class60) this).anInt601));
@@ -72,7 +72,7 @@ public class Class60 {
 					&& (-72440277 * ((Class60) this).anInt595 != class432.anInt5365 * 1181652947)) {
 				method704(true, -1, 0, 2114520079);
 				((Class60) this).aBoolean600 = false;
-				((Class60) this).aClass387_584 = null;
+				((Class60) this).aDrawableModel_584 = null;
 			}
 			method703(((Class60) this).aClass365_Sub1_587, 1121645041);
 			if (bool_1_)
@@ -101,11 +101,11 @@ public class Class60 {
 			else
 				class_xa_3_ = (((Class60) this).aByte588 < 3 ? (class331.aClass_xaArray3517[1 + ((Class60) this).aByte588])
 						: null);
-			Class387 class387 = null;
+			DrawableModel drawableModel = null;
 			if (((Class60) this).aClass438_593.method5819((byte) -82)) {
 				if (bool_1_)
 					i |= 0x40000;
-				class387 = (class432
+				drawableModel = (class432
 						.method5774(
 								class_ra,
 								i,
@@ -122,11 +122,11 @@ public class Class60 {
 								(int) class217.aFloat2454,
 								((Class60) this).aClass438_593,
 								((Class60) this).aClass435_597, (byte) 18));
-				if (null != class387) {
+				if (null != drawableModel) {
 					if (bool_1_) {
 						if (null == ((Class60) this).aBooleanArray596)
 							((Class60) this).aBooleanArray596 = new boolean[4];
-						((Class60) this).aClass_na599 = class387
+						((Class60) this).aClass_na599 = drawableModel
 								.ga(((Class60) this).aClass_na599);
 						class331.method4055(((Class60) this).aClass_na599,
 								((Class60) this).aByte588,
@@ -135,19 +135,19 @@ public class Class60 {
 								((Class60) this).aBooleanArray596, -1719073428);
 						((Class60) this).aBoolean600 = true;
 					}
-					((Class60) this).anInt586 = class387.YA() * -1931353415;
-					class387.n();
+					((Class60) this).anInt586 = drawableModel.YA() * -1931353415;
+					drawableModel.n();
 				} else {
 					((Class60) this).aBooleanArray596 = null;
 					((Class60) this).aClass_na599 = null;
 					((Class60) this).anInt586 = 0;
 				}
-				((Class60) this).aClass387_584 = null;
-			} else if (((Class60) this).aClass387_584 == null
-					|| (((Class60) this).aClass387_584.m() & i) != i
+				((Class60) this).aDrawableModel_584 = null;
+			} else if (((Class60) this).aDrawableModel_584 == null
+					|| (((Class60) this).aDrawableModel_584.m() & i) != i
 					|| (-72440277 * ((Class60) this).anInt595 != 1181652947 * class432.anInt5365)) {
-				if (((Class60) this).aClass387_584 != null)
-					i |= ((Class60) this).aClass387_584.m();
+				if (((Class60) this).aDrawableModel_584 != null)
+					i |= ((Class60) this).aDrawableModel_584.m();
 				Class454 class454 = (class432
 						.method5785(
 								class_ra,
@@ -165,7 +165,7 @@ public class Class60 {
 								(int) class217.aFloat2454, bool_1_,
 								((Class60) this).aClass435_597, -105046202));
 				if (class454 != null) {
-					((Class60) this).aClass387_584 = class387 = (Class387) class454.anObject5645;
+					((Class60) this).aDrawableModel_584 = drawableModel = (DrawableModel) class454.anObject5645;
 					if (bool_1_) {
 						((Class60) this).aClass_na599 = (Class_na) class454.anObject5646;
 						((Class60) this).aBooleanArray596 = null;
@@ -175,29 +175,29 @@ public class Class60 {
 								(int) class217.aFloat2454, null, -1920595487);
 						((Class60) this).aBoolean600 = true;
 					}
-					((Class60) this).anInt586 = class387.YA() * -1931353415;
-					class387.n();
+					((Class60) this).anInt586 = drawableModel.YA() * -1931353415;
+					drawableModel.n();
 				} else {
 					((Class60) this).aBooleanArray596 = null;
 					((Class60) this).aClass_na599 = null;
-					((Class60) this).aClass387_584 = null;
+					((Class60) this).aDrawableModel_584 = null;
 					((Class60) this).anInt586 = 0;
 				}
 			} else
-				class387 = ((Class60) this).aClass387_584;
+				drawableModel = ((Class60) this).aDrawableModel_584;
 			((Class60) this).anInt595 = class432.anInt5365 * -722933511;
-			return class387;
+			return drawableModel;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()
 					.append("ck.i(").append(')').toString());
 		}
 	}
 
-	void method701(GraphicsToolkit class_ra, Class387 class387, Class222 class222,
-			int i, int i_4_, int i_5_, int i_6_, boolean bool, int i_7_) {
+	void method701(GraphicsToolkit class_ra, DrawableModel drawableModel, Class222 class222,
+                   int i, int i_4_, int i_5_, int i_6_, boolean bool, int i_7_) {
 		try {
-			Class85[] class85s = class387.method4781();
-			Class68[] class68s = class387.method4728();
+			Class85[] class85s = drawableModel.method4781();
+			Class68[] class68s = drawableModel.method4728();
 			if ((((Class60) this).aClass351_602 == null || ((Class60) this).aClass351_602.aBoolean3772)
 					&& (null != class85s || class68s != null)) {
 				ObjectDefinitions class432 = (((Class60) this).aClass433_585.getObjectDefinitions(
@@ -213,7 +213,7 @@ public class Class60 {
 							client.anInt8884 * 443738891, true);
 			}
 			if (null != ((Class60) this).aClass351_602) {
-				class387.method4786(class222);
+				drawableModel.method4786(class222);
 				if (bool)
 					((Class60) this).aClass351_602.method4231(class_ra,
 							(long) (client.anInt8884 * 443738891), class85s,
@@ -344,7 +344,7 @@ public class Class60 {
 						bool_15_, (byte) 0);
 				((Class60) this).anInt594 = client.anInt8884 * -803072405;
 				((Class60) this).aBoolean600 = false;
-				((Class60) this).aClass387_584 = null;
+				((Class60) this).aDrawableModel_584 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder()

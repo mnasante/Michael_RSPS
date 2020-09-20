@@ -508,12 +508,12 @@ public class IComponentDefinition {
 		}
 	}
 
-	public void method1114(GraphicsToolkit class_ra, Class387 class387,
+	public void method1114(GraphicsToolkit class_ra, DrawableModel drawableModel,
 			Class222 class222, int i, int i_28_) {
 		try {
-			class387.method4786(class222);
-			Class85[] class85s = class387.method4781();
-			Class68[] class68s = class387.method4728();
+			drawableModel.method4786(class222);
+			Class85[] class85s = drawableModel.method4781();
+			Class68[] class68s = drawableModel.method4728();
 			if ((null == aClass351_1218 || aClass351_1218.aBoolean3772)
 					&& (null != class85s || class68s != null))
 				aClass351_1218 = Class351.method4232(i, false);
@@ -762,10 +762,10 @@ public class IComponentDefinition {
 		}
 	}
 
-	public Class387 method1124(GraphicsToolkit class_ra, int i, Class349 class349,
-			Class144 class144, Class507 class507, Class477 class477,
-			Class395 class395, Interface23 interface23, Class438 class438,
-			Class366 class366, int i_48_) {
+	public DrawableModel method1124(GraphicsToolkit class_ra, int i, Class349 class349,
+                                    Class144 class144, Class507 class507, Class477 class477,
+                                    Class395 class395, Interface23 interface23, Class438 class438,
+                                    Class366 class366, int i_48_) {
 		try {
 			aBoolean1139 = false;
 			if (0 == 1548853569 * anInt1184)
@@ -807,11 +807,11 @@ public class IComponentDefinition {
 				long l_52_ = ((long) (class_ra.anInt5298 * 580915349) << 59
 						| (long) (anInt1184 * 1548853569) << 54
 						| (long) (anInt1151 * 572201537) << 38 | l & 0x3fffffffffL);
-				Class387 class387 = (Class387) aClass348_1138.method4184(l_52_);
-				if (null == class387
-						|| class_ra.method5017(class387.m(), i) != 0) {
-					if (class387 != null)
-						i = class_ra.method5004(i, class387.m());
+				DrawableModel drawableModel = (DrawableModel) aClass348_1138.method4184(l_52_);
+				if (null == drawableModel
+						|| class_ra.method5017(drawableModel.m(), i) != 0) {
+					if (drawableModel != null)
+						i = class_ra.method5004(i, drawableModel.m());
 					Class64 class64 = Class64.method751(
 							(RuntimeException_Sub3.aClass243_6310),
 							572201537 * anInt1151, 0);
@@ -821,71 +821,71 @@ public class IComponentDefinition {
 					}
 					if (class64.anInt630 < 13)
 						class64.method755(2);
-					class387 = class_ra.method5037(class64, i,
+					drawableModel = class_ra.method5037(class64, i,
 							Class21.anInt275 * 951783317, 64, 768);
 					if (null != ((IComponentDefinition) this).aShortArray1118) {
 						for (int i_53_ = 0; i_53_ < ((IComponentDefinition) this).aShortArray1118.length; i_53_++)
-							class387.X(
+							drawableModel.X(
 									(((IComponentDefinition) this).aShortArray1118[i_53_]),
 									(((IComponentDefinition) this).aShortArray1203[i_53_]));
 					}
 					if (((IComponentDefinition) this).aShortArray1204 != null) {
 						for (int i_54_ = 0; i_54_ < ((IComponentDefinition) this).aShortArray1204.length; i_54_++)
-							class387.W(
+							drawableModel.W(
 									(((IComponentDefinition) this).aShortArray1204[i_54_]),
 									(((IComponentDefinition) this).aShortArray1234[i_54_]));
 					}
-					aClass348_1138.method4194(class387, l_52_);
+					aClass348_1138.method4194(drawableModel, l_52_);
 				}
 				if (class438 != null) {
-					class387 = class387.method4755((byte) 1, i, true);
-					class438.method5839(class387, 0, -719593032);
+					drawableModel = drawableModel.method4755((byte) 1, i, true);
+					class438.method5839(drawableModel, 0, -719593032);
 				}
-				class387.KA(i_49_);
-				return class387;
+				drawableModel.KA(i_49_);
+				return drawableModel;
 			}
 			if (2 == 1548853569 * anInt1184) {
-				Class387 class387 = (class507.method6269(572201537 * anInt1151,
+				DrawableModel drawableModel = (class507.method6269(572201537 * anInt1151,
 						-1438978079).method6237(class_ra, i, interface23,
 						class438, aClass498_1307, 636300802));
-				if (null == class387) {
+				if (null == drawableModel) {
 					aBoolean1139 = true;
 					return null;
 				}
-				return class387;
+				return drawableModel;
 			}
 			if (anInt1184 * 1548853569 == 3) {
 				if (class366 == null)
 					return null;
-				Class387 class387 = class366.method4543(class_ra, i, class144,
+				DrawableModel drawableModel = class366.method4543(class_ra, i, class144,
 						class507, class477, class395, interface23, class438,
 						-275612851);
-				if (class387 == null) {
+				if (drawableModel == null) {
 					aBoolean1139 = true;
 					return null;
 				}
-				return class387;
+				return drawableModel;
 			}
 			if (anInt1184 * 1548853569 == 4) {
 				ItemDefinitions class468 = class477.getItemDefinitions(anInt1151 * 572201537);
-				Class387 class387 = class468.method6029(class_ra, i, 10,
+				DrawableModel drawableModel = class468.method6029(class_ra, i, 10,
 						class366, class438, 0, 0, 0, 0, 2097526071);
-				if (null == class387) {
+				if (null == drawableModel) {
 					aBoolean1139 = true;
 					return null;
 				}
-				return class387;
+				return drawableModel;
 			}
 			if (6 == anInt1184 * 1548853569) {
-				Class387 class387 = (class507.method6269(anInt1151 * 572201537,
+				DrawableModel drawableModel = (class507.method6269(anInt1151 * 572201537,
 						-2061874989).method6246(class_ra, i, class349,
 						interface23, class438, null, null, null, 0,
 						aClass498_1307, -884053309));
-				if (class387 == null) {
+				if (drawableModel == null) {
 					aBoolean1139 = true;
 					return null;
 				}
-				return class387;
+				return drawableModel;
 			}
 			if (7 == 1548853569 * anInt1184) {
 				if (null == class366)
@@ -893,13 +893,13 @@ public class IComponentDefinition {
 				int i_55_ = anInt1151 * 572201537 >>> 16;
 				int i_56_ = anInt1151 * 572201537 & 0xffff;
 				int i_57_ = 1148770405 * anInt1140;
-				Class387 class387 = class366.method4544(class_ra, i, class144,
+				DrawableModel drawableModel = class366.method4544(class_ra, i, class144,
 						class395, class438, i_55_, i_56_, i_57_, (byte) 0);
-				if (null == class387) {
+				if (null == drawableModel) {
 					aBoolean1139 = true;
 					return null;
 				}
-				return class387;
+				return drawableModel;
 			}
 			return null;
 		} catch (RuntimeException runtimeexception) {
